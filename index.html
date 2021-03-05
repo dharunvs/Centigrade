@@ -53,15 +53,15 @@
     <div class="landing">
         <header>
             <div class="logo">
-                <h2 id="logo">Centigrade</h2>
+                <h2 id="logo"><a href="#">Centigrade</a></h2>
             </div>
             <div class="nav-container">
                 <nav>
                     <ul class="nav-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Team</a></li>
+                        <li><a href="#" class="nav-link" id="current">Home</a></li>
+                        <li><a href="#" class="nav-link">Gallery</a></li>
+                        <li><a href="#" class="nav-link">About</a></li>
+                        <li><a href="#" class="nav-link">Team</a></li>
                     </ul>
                 </nav>
             </div>
@@ -82,6 +82,17 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
-    <script src="./scripts/app.js"></script>
+    <script>
+
+        const tl = gsap.timeline({defaults: {ease : 'power1.out'}});
+
+        tl.to('.text', {y : "0%", duration : 1, stagger : 0.25});
+        tl.fromTo('.text', {opacity : 1}, {opacity : 0, duration : 1, stagger : 0.25, delay : 1});
+        tl.to('.slider', {y : "-100%", duration : 1, delay: 1}, "-=2");
+        tl.to('.intro', {y : "-100%", duration : 1}, "-=1");
+        tl.fromTo('nav', {opacity : 0}, {opacity : 1, duration : 1});
+
+
+    </script>
 </body>
 </html>
