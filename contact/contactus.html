@@ -1,1 +1,50 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contactus.css" />
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+<script>
+    function SubForm (){
+        $.ajax({
+            url:"https://api.apispreadsheets.com/data/9062/",
+            type:"post",
+            data:$("#myForm").serializeArray(),
+            success: function(){
+                alert("Form Data Submitted :)")
+            },
+            error: function(){
+                alert("There was an error :(")
+            }
+        });
+    }
+</script>
+</head>
+<body>
+<div class="content">
+ <form id="myForm">
+    <label>First Name</label>
+    <input name="First Name" />
+    <br/>
+    <label>Last Name</label>
+    <input name="Last Name" />
+    <br/>
+    <label>e-mail Address</label>
+    <input name="e-mail Address" />
+    <br/>
+    <label>Country</label>
+    <input name="Contact No" />
+    <br/>
+    <label>Message</label>
+    <input name="Message" />
+    <br/>
+ </form> 
+ <button onclick='SubForm()'>Submit</button>
+</div>
+</body>
+</html>
+</html>
