@@ -1,18 +1,241 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <title>Centigrade</title>
-    <style>
-
-
-    </style>
+    
 </head>
+<style>
+    @font-face {
+        font-family: Poppins;
+        src: url("../fonts/Poppins-Regular.ttf");
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Poppins;
+    }
+
+    body {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    .landing,
+    .gallery,
+    .about,
+    .team,
+    .contact {
+        height: 90vh;
+        width: 100%;
+        position: absolute;
+        top: 10vh;
+    }
+    .landing {
+        background-image: linear-gradient(135deg, #abdcff 10%, #0396ff 100%);
+        transform: translateX(0%);
+    
+    }
+    .gallery {
+        background-image: linear-gradient(135deg, #feb692 10%, #ea5455 100%);
+        transform: translateX(100%);
+    }
+    .about {
+        background-image: linear-gradient(135deg, #e2b0ff 10%, #9f44d3 100%);
+        transform: translateX(200%);
+
+    }
+    .team {
+        background-image: linear-gradient(135deg, #ffd26f 10%, #3677ff 100%);
+        transform: translateX(300%);
+
+    }
+    .contact {
+        background-image: linear-gradient(135deg, #fdd819 10%, #e80505 100%);
+        transform: translateX(400%);
+    }
+
+    header {
+        position: absolute;
+        height: 10vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: aliceblue;
+    }
+
+    .nav-container {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+        transition: all 600ms ease-in-out;
+    }
+    .nav-links,
+    li {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        cursor: pointer;
+    }
+
+    .nav-links a,
+    .contact-link a,
+    #logo a {
+        text-decoration: none;
+        color: rgb(0, 2, 117);
+    }
+
+    #current {
+        font-weight: bold;
+    }
+
+    .nav-link {
+        transition: all 100ms ease-in-out;
+    }
+
+    .nav-link:hover {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: rgb(0, 47, 148);
+    }
+
+    .intro{
+        position: fixed;
+        top: 0;
+        left: 0%;
+        background-color: rgb(1, 0, 31);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .slider{
+        position: fixed;
+        top: 0;
+        left: 0%;
+        background-color: rgb(87, 100, 128);
+        width: 100%;
+        height: 100%;
+        transform: translate(0%, 100%);
+    }
+
+    .intro-text{
+        font-size: 2.2rem;
+    }
+    .intro-text h1, .intro-text h2{
+        color: aliceblue;
+    }
+
+    .hide{
+        background-color: rgb(1, 0, 31);
+        overflow: hidden;
+    }
+
+    .hide span{
+        transform: translateY(150%);
+        display: inline-block;
+    }
+    .banner{
+        width: 100%;
+
+    }
+
+    .content {
+  margin-left: 700px;
+  margin-top: 0px;
+  width: 40%;
+}
+
+#myForm label {
+  font-size: 18px;
+}
+
+#myForm input {
+  margin: inline;
+  border: 1px solid rgb(16, 31, 235);
+  color: rgb(0, 0, 255);
+  margin-top: 4px;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 10px 25px;
+  padding-left: 10px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0.25s;
+  display: flex;
+}
+
+#myForm input::placeholder {
+  color: rgb(62, 13, 240);
+  font-size: 14px;
+}
+
+#myForm input::before {
+  content: "";
+}
+
+#myForm input:focus {
+  border: 3px solid white;
+  width: 200px;
+  border-color: #2ecc71;
+}
+
+#myForm input:hover {
+  background: #2ecc71;
+}
+
+#myForm i {
+  position: absolute;
+  font-size: 20px;
+  color: black;
+  margin: 15px 0 0 -25px;
+}
+
+.address {
+  margin-left: 0px;
+  margin-top: 150px;
+}
+
+.address p {
+  display: flex;
+}
+
+.content button {
+  color: #fbfcfd;
+  padding: 10px 25px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+.content button:hover {
+  background-color: aliceblue;
+  opacity: 1;
+  color: black;
+}
+
+#button:focus {
+  border: 3px solid aqua;
+}
+</style>
 <body>
     <header>
         <div class="logo">
@@ -29,13 +252,16 @@
             </nav>
         </div>
         <div class="contact-link">
-            <li class="nav-link" onclick="pageAnimate('contact')">Contact Us</li>
+            <li class="nav-link" onclick="pageAnimate('contact')">Contact</li>
         </div>
 
         <div class="intro">
             <div class="intro-text">
                <h1 class="hide"><span class="text">Centigrade</span></h1>
-            </div>
+               <h2 class="hide"><span class="text">Mattress</span></h2>
+               <h2 class="hide"><span class="text">Do You want to repair your body ??</span></h2>
+               <h2 class="hide"><span class="text">If so, get our mattress</span></h2>
+            </div> 
         </div>
         <div class="slider"></div>
     </header>
@@ -48,28 +274,31 @@
         <div class="team"></div>
         <div class="contact">
 
-
-            <div class="main-block">
-                <div class="left-part">
-                    <i class="fas fa-envelope"></i>
-                    <i class="fas fa-at"></i>
-                    <i class="fas fa-mail-bulk"></i>
-                </div>
-
-                <form action="/">
-                    <h1>Contact Us</h1>
-                        <div class="info">
-                            <input class="fname" type="text" name="name" placeholder="Full name">
-                            <input type="text" name="name" placeholder="Email">
-                            <input type="text" name="name" placeholder="Phone number">
-                            <textarea rows="4" placeholder="Enter your message"></textarea>
-                        </div>
-                        <button type="submit" onclick="SubForm()" href="/">Submit</button>
-                </form>
-            </div>
+            <div class="content">
+                <form id="myForm">
+                   <label>First Name</label>
+                   <input name="First Name" required placeholder="Enter your First Name" />
+                   <br/>
+                   <label>Last Name</label>
+                   <input name="Last Name" required placeholder="Enter your Last Name" />
+                   <br/>
+                   <label>e-mail Address</label>
+                   <input name="e-mail Address" type="email" required placeholder="Enter your email"/> 
+                   <br/>
+                   <label>Contact No</label>
+                   <input name="Contact No" required placeholder="Enter your Contact"/>
+                   <br/>
+                   <label>Message</label>
+                   <input name="Message" required placeholder="Write Something ..." />
+                   <br/>
+                </form> 
+                <button onclick='SubForm()'>Submit</button>
+               </div>
 
         </div>
 
+    </div>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
     <script>
@@ -105,20 +334,48 @@
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
-<script>
-    function SubForm (){
-        $.ajax({
-            url:"https://api.apispreadsheets.com/data/9062/",
-            type:"post",
-            data:$("#myForm").serializeArray(),
-            success: function(){
-                alert("Form Data Submitted :)")
-            },
-            error: function(){
-                alert("There was an error :(")
-            }
-        });
-    }
-</script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/9069/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+                
+				success: function(){
+                    var a = document.forms["myForm"]["First Name"].value;
+                    var b = document.forms["myForm"]["Last Name"].value;
+                    var c = document.forms["myForm"]["e-mail Address"].value;
+                    var d = document.forms["myForm"]["Contact No"].value;
+                    var s = document.forms["myForm"]["Message"].value;
+
+                    if (a==" "||b==""||c==""||d==""||s==""){
+                         alert("atleast one field you left blank");
+                         return false;
+                        
+                     }
+                    else {
+                        
+                         alert("Form Submitted successfully");
+                         return true;
+
+                        
+                     }
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+
+        
+        
+	</script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+</head>
 </body>
 </html>
