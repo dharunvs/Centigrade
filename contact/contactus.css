@@ -9,8 +9,8 @@
 }
 
 .content {
-  margin-left: 500px;
-  margin-top: 150px;
+  margin-left: 700px;
+  margin-top: 0px;
   width: 40%;
 }
 
@@ -30,4 +30,61 @@
   outline: none;
   background-color: rgba(255, 255, 255, 0);
   transition: 0.25s;
+  display: flex;
+}
+
+#myForm input::placeholder {
+  color: white;
+  font-size: 14px;
+}
+
+#myForm input::before {
+  content: "";
+}
+
+#myForm input:focus {
+  border: 3px solid white;
+  width: 200px;
+  border-color: #2ecc71;
+}
+
+#myForm input:hover {
+  background: #2ecc71;
+}
+
+#myForm i {
+  position: absolute;
+  font-size: 20px;
+  color: black;
+  margin: 15px 0 0 -25px;
+}
+
+.address {
+  margin-left: 0px;
+  margin-top: 150px;
+}
+
+.address p {
+  display: flex;
+}
+
+.content button {
+  color: #fbfcfd;
+  padding: 10px 25px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+.content button:hover {
+  background-color: aliceblue;
+  opacity: 1;
+  color: black;
+}
+
+#button:focus {
+  border: 3px solid aqua;
 }
