@@ -4,82 +4,300 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
     <title>Centigrade</title>
     
 </head>
 <style>
+    @font-face {
+        font-family: Poppins;
+        src: url("../fonts/Poppins-Regular.ttf");
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Poppins;
+    }
+
+    body {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    .landing,
+    .gallery,
+    .about,
+    .team,
+    .contact {
+        height: 90vh;
+        width: 100%;
+        position: absolute;
+        top: 10vh;
+    }
+    .landing {
+        background-image: linear-gradient(135deg, #abdcff 10%, #0396ff 100%);
+        transform: translateX(0%);
+    
+    }
+    .gallery {
+        background-image: linear-gradient(135deg, #feb692 10%, #ea5455 100%);
+        transform: translateX(100%);
+    }
+    .about {
+        background-image: linear-gradient(135deg, #e2b0ff 10%, #9f44d3 100%);
+        transform: translateX(200%);
+
+    }
+    .team {
+        background-image: linear-gradient(135deg, #ffd26f 10%, #3677ff 100%);
+        transform: translateX(300%);
+
+    }
+    .contact {
+        background-image: linear-gradient(135deg, #fdd819 10%, #e80505 100%);
+        transform: translateX(400%);
+    }
+
+    header {
+        position: absolute;
+        height: 10vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: aliceblue;
+    }
+
+    .nav-container {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+        transition: all 600ms ease-in-out;
+    }
+    .nav-links,
+    li {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        cursor: pointer;
+    }
+
+    .nav-links a,
+    .contact-link a,
+    #logo a {
+        text-decoration: none;
+        color: rgb(0, 2, 117);
+    }
+
+    #current {
+        font-weight: bold;
+    }
+
+    .nav-link {
+        transition: all 100ms ease-in-out;
+    }
+
+    .nav-link:hover {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: rgb(0, 47, 148);
+    }
+
     .intro{
-    position: fixed;
-    top: 0;
-    left: 0%;
-    background-color: rgb(1, 0, 31);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0%;
+        background-color: rgb(1, 0, 31);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .slider{
+        position: fixed;
+        top: 0;
+        left: 0%;
+        background-color: rgb(87, 100, 128);
+        width: 100%;
+        height: 100%;
+        transform: translate(0%, 100%);
+    }
+
+    .intro-text{
+        font-size: 2.2rem;
+    }
+    .intro-text h1, .intro-text h2{
+        color: aliceblue;
+    }
+
+    .hide{
+        background-color: rgb(1, 0, 31);
+        overflow: hidden;
+    }
+
+    .hide span{
+        transform: translateY(150%);
+        display: inline-block;
+    }
+    .banner{
+        width: 100%;
+
+    }
+
+    .content {
+  margin-left: 700px;
+  margin-top: 0px;
+  width: 40%;
 }
 
-.slider{
-    position: fixed;
-    top: 0;
-    left: 0%;
-    background-color: rgb(87, 100, 128);
-    width: 100%;
-    height: 100%;
-    transform: translate(0%, 100%);
+#myForm label {
+  font-size: 18px;
 }
 
-.intro-text{
-    font-size: 2.2rem;
-}
-.intro-text h1, .intro-text h2{
-    color: aliceblue;
+#myForm input {
+  margin: inline;
+  border: 1px solid rgb(16, 31, 235);
+  color: rgb(0, 0, 255);
+  margin-top: 4px;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 10px 25px;
+  padding-left: 10px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0.25s;
+  display: flex;
 }
 
-.hide{
-    background-color: rgb(1, 0, 31);
-    overflow: hidden;
+#myForm input::placeholder {
+  color: white;
+  font-size: 14px;
 }
 
-.hide span{
-    transform: translateY(150%);
-    display: inline-block;
+#myForm input::before {
+  content: "";
+}
+
+#myForm input:focus {
+  border: 3px solid white;
+  width: 200px;
+  border-color: #2ecc71;
+}
+
+#myForm input:hover {
+  background: #2ecc71;
+}
+
+#myForm i {
+  position: absolute;
+  font-size: 20px;
+  color: black;
+  margin: 15px 0 0 -25px;
+}
+
+.address {
+  margin-left: 0px;
+  margin-top: 150px;
+}
+
+.address p {
+  display: flex;
+}
+
+.content button {
+  color: #fbfcfd;
+  padding: 10px 25px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+.content button:hover {
+  background-color: aliceblue;
+  opacity: 1;
+  color: black;
+}
+
+#button:focus {
+  border: 3px solid aqua;
 }
 </style>
 <body>
-    
-    <div class="landing">
-        <header>
-            <div class="logo">
-                <h2 id="logo"><a href="#">Centigrade</a></h2>
-            </div>
-            <div class="nav-container">
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="./index.html" class="nav-link" id="current">Home</a></li>
-                        <li><a href="./pages/gallery.html" class="nav-link">Gallery</a></li>
-                        <li><a href="./pages/about.html" class="nav-link">About</a></li>
-                        <li><a href="./pages/team.html" class="nav-link">Team</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="contact">
-                <a href="./pages/contact.html">Contact</a>
-            </div>
+    <header>
+        <div class="logo">
+            <h2 id="logo"><a href="#">Centigrade</a></h2>
+        </div>
+        <div class="nav-container">
+            <nav>
+                <ul class="nav-links">
+                    <li class="nav-link active" onclick="pageAnimate('landing')">Home</li>
+                    <li class="nav-link" onclick="pageAnimate('gallery')">Gallery</li>
+                    <li class="nav-link" onclick="pageAnimate('about')">About</li>
+                    <li class="nav-link" onclick="pageAnimate('team')">Team</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contact-link">
+            <li class="nav-link" onclick="pageAnimate('contact')">Contact</li>
+        </div>
 
-            <div class="intro">
-                <div class="intro-text">
-                   <h1 class="hide"><span class="text">Centigrade</span></h1>
-                   <h2 class="hide"><span class="text">Mattress</span></h2>
-                   <h2 class="hide"><span class="text">Do You want to repair your body ??</span></h2>
-                   <h2 class="hide"><span class="text">If so, get our mattress</span></h2>
-                </div> 
-            </div>
-            <div class="slider"></div>
-        </header>
+        <div class="intro">
+            <div class="intro-text">
+               <h1 class="hide"><span class="text">Centigrade</span></h1>
+               <h2 class="hide"><span class="text">Mattress</span></h2>
+               <h2 class="hide"><span class="text">Do You want to repair your body ??</span></h2>
+               <h2 class="hide"><span class="text">If so, get our mattress</span></h2>
+            </div> 
+        </div>
+        <div class="slider"></div>
+    </header>
+
+    <div class="pages">
+
+        <div class="landing"></div>
+        <div class="gallery"></div>
+        <div class="about"></div>
+        <div class="team"></div>
+        <div class="contact">
+
+            <div class="content">
+                <form id="myForm">
+                   <label>First Name</label>
+                   <input name="First Name" />
+                   <br/>
+                   <label>Last Name</label>
+                   <input name="Last Name" />
+                   <br/>
+                   <label>e-mail Address</label>
+                   <input name="e-mail Address" />
+                   <br/>
+                   <label>Country</label>
+                   <input name="Contact No" />
+                   <br/>
+                   <label>Message</label>
+                   <input name="Message" />
+                   <br/>
+                </form> 
+                <button onclick='SubForm()'>Submit</button>
+               </div>
+
+        </div>
+
     </div>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
     <script>
@@ -92,7 +310,43 @@
         tl.to('.intro', {y : "-100%", duration : 1}, "-=1");
         tl.fromTo('nav', {opacity : 0}, {opacity : 1, duration : 1});
 
+        pageAnimate = (page) => {
+            var distance = 0
+            if (page == 'gallery'){
+                distance = -100
+            }
+            if (page == 'about'){
+                distance = -200
+            }
+            if (page == 'team'){
+                distance = -300
+            }
+            if (page == 'contact'){
+                distance = -400
+            }
+            tl.to('.pages', {x : ''+distance+'%', duration : 0.5});
+        };
+
 
     </script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+<script>
+    function SubForm (){
+        $.ajax({
+            url:"https://api.apispreadsheets.com/data/9062/",
+            type:"post",
+            data:$("#myForm").serializeArray(),
+            success: function(){
+                alert("Form Data Submitted :)")
+            },
+            error: function(){
+                alert("There was an error :(")
+            }
+        });
+    }
+</script>
 </body>
 </html>
