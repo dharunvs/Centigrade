@@ -32,7 +32,7 @@ nav {
   transition: all 600ms ease-in-out;
 }
 .nav-links {
-  width: 80%;
+  width: 70%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -56,6 +56,7 @@ nav {
 }
 
 .nav-link:hover {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
+  color: rgb(0, 18, 100);
 }
