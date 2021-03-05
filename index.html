@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/contact.css">
     <title>Centigrade</title>
-    <style>
-
-
-    </style>
+    
 </head>
+<style>
+    
+
+    
+</style>
 <body>
     <header>
         <div class="logo">
@@ -29,13 +30,16 @@
             </nav>
         </div>
         <div class="contact-link">
-            <li class="nav-link" onclick="pageAnimate('contact')">Contact Us</li>
+            <li class="nav-link" onclick="pageAnimate('contact')">Contact</li>
         </div>
 
         <div class="intro">
             <div class="intro-text">
                <h1 class="hide"><span class="text">Centigrade</span></h1>
-            </div>
+               <h2 class="hide"><span class="text">Mattress</span></h2>
+               <h2 class="hide"><span class="text">Do You want to repair your body ??</span></h2>
+               <h2 class="hide"><span class="text">If so, get our mattress</span></h2>
+            </div> 
         </div>
         <div class="slider"></div>
     </header>
@@ -46,8 +50,9 @@
         <div class="gallery"></div>
         <div class="about"></div>
         <div class="team"></div>
-        <div class="contact">
 
+
+        <div class="contact">
 
             <div class="main-block">
                 <div class="left-part">
@@ -68,57 +73,15 @@
                 </form>
             </div>
 
-        </div>
-
+    </div>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
-    <script>
-
-        const tl = gsap.timeline({defaults: {ease : 'power1.out'}});
-
-        tl.to('.text', {y : "0%", duration : 1, stagger : 0.25});
-        tl.fromTo('.text', {opacity : 1}, {opacity : 0, duration : 1, stagger : 0.25, delay : 1});
-        tl.to('.slider', {y : "-100%", duration : 1, delay: 1}, "-=2");
-        tl.to('.intro', {y : "-100%", duration : 1}, "-=1");
-        tl.fromTo('nav', {opacity : 0}, {opacity : 1, duration : 1});
-
-        pageAnimate = (page) => {
-            var distance = 0
-            if (page == 'gallery'){
-                distance = -100
-            }
-            if (page == 'about'){
-                distance = -200
-            }
-            if (page == 'team'){
-                distance = -300
-            }
-            if (page == 'contact'){
-                distance = -400
-            }
-            tl.to('.pages', {x : ''+distance+'%', duration : 0.5});
-        };
-
-
-    </script>
+    <script src="./scripts/app.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
-<script>
-    function SubForm (){
-        $.ajax({
-            url:"https://api.apispreadsheets.com/data/9062/",
-            type:"post",
-            data:$("#myForm").serializeArray(),
-            success: function(){
-                alert("Form Data Submitted :)")
-            },
-            error: function(){
-                alert("There was an error :(")
-            }
-        });
-    }
-</script>
+    <script src="./scripts/contact.js"></script>
 </body>
 </html>
