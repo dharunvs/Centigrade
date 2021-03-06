@@ -27,7 +27,7 @@ body {
 .shop {
   height: 100vh;
   width: 100%;
-  position: absolute;
+  position: fixed;
 }
 .landing {
   background-image: linear-gradient(135deg, #abdcff 10%, #0396ff 100%);
@@ -50,8 +50,8 @@ body {
   transform: translateX(400%);
 }
 header {
-  position: absolute;
-  height: 12vh;
+  position: fixed;
+  height: 10vh;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
@@ -96,7 +96,7 @@ li {
 }
 
 #shop {
-  padding: 4px 15px;
+  padding: 10px 20px;
   background-color: #ffffff65;
   color: var(--color-blue);
   transition: all 100ms ease-in-out;
@@ -108,7 +108,7 @@ li {
 
 .fa-shopping-cart {
   color: var(--color-blue);
-  margin-left: 3px;
+  margin-left: 5px;
 }
 
 .active {

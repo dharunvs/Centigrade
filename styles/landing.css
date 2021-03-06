@@ -1,0 +1,11 @@
+.landing-content {
+  margin-top: 20vh;
+  width: 90;
+  display: grid;
+  grid-template-columns: 1fr 20fr 1fr;
+}
+
+.left-arrow,
+.right-arrow {
+  background-color: rgba(240, 248, 255, 0.247);
+}
