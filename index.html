@@ -91,16 +91,21 @@
                     <i class="fas fa-mail-bulk"></i>
                 </div>
 
-                <form action="">
-                    <h1>Contact Us</h1>
-                        <div class="info">
-                            <input class="fname" type="text" name="name" placeholder="Full name">
-                            <input type="text" name="name" placeholder="Email">
-                            <input type="text" name="name" placeholder="Phone number">
-                            <textarea rows="4" placeholder="Enter your message"></textarea>
-                        </div>
-                        <button type="submit" onclick="SubForm()" >Submit</button>
-                </form>
+          <form id="myForm">
+            <h1>Contact Us</h1>
+            <div class="info">
+              <input name="Full Name" placeholder="Full name" />
+              <input type="email" name="Email" placeholder="Email" />
+              <input name="Phone No" placeholder="Phone number" />
+              <textarea
+                rows="4"
+                name="Message"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+            <button onclick="SubForm()" type="button" href="/">Submit</button>
+            <div class="submitted">Form submitted successfully</div>
+          </form>
             </div>
 
         </div>
