@@ -1,0 +1,73 @@
+.team-members {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.member {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  transition: all 200ms ease-in-out;
+}
+.member .card {
+  z-index: 4;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(240, 248, 255, 0.774);
+  transform: translateY(-100%);
+  transition: all 200ms ease-in-out;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card h1 {
+  margin: 20px;
+  color: rgb(109, 0, 76);
+}
+
+.card a {
+  margin-top: 5px;
+  text-decoration: none;
+  color: aliceblue;
+  border-radius: 5px;
+  background-color: rgb(74, 0, 109);
+  padding: 5px 10px;
+}
+.member img {
+  position: relative;
+  z-index: -1;
+  transform: translateY(-100%);
+}
+
+.member1:hover {
+  width: 400px;
+  height: 400px;
+}
+.member2:hover {
+  width: 400px;
+  height: 400px;
+}
+.member3:hover {
+  width: 400px;
+  height: 400px;
+}
+
+.member1:hover .card1 {
+  transform: translateY(0%);
+}
+.member2:hover .card2 {
+  transform: translateY(0%);
+}
+.member3:hover .card3 {
+  transform: translateY(0%);
+}

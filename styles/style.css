@@ -37,7 +37,12 @@ body {
   transform: translateX(200%);
 }
 .team {
-  background: linear-gradient(167deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(69,206,252,1) 100%);
+  background: linear-gradient(
+    167deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(69, 206, 252, 1) 100%
+  );
   transform: translateX(300%);
 }
 .contact {

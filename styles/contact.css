@@ -28,9 +28,10 @@ form {
 .fa-mail-bulk {
   transform: rotate(10deg);
 }
-.fab fa-github:hover{
 
-
+form h1 {
+  color: #0098c7;
+  margin-bottom: 15px;
 }
 input,
 textarea {
@@ -39,16 +40,17 @@ textarea {
   margin-bottom: 20px;
   border: 1px solid #1c87c9;
   outline: none;
+  resize: none;
 }
 input::placeholder {
   color: rgb(114, 106, 106);
 }
 
 button {
-  width: 100%;
+  width: calc(100% - 18px);
   padding: 10px;
   border: none;
-  background: #1c87c9;
+  background: #007dd1;
   font-size: 16px;
   font-weight: 400;
   color: #fff;
@@ -78,64 +80,4 @@ button:hover {
     margin-top: 2%;
     margin-left: 28%;
   }
-}
-
-.Dharun-Vs {
-  position: fixed;
-  left: 100px;
-  top: 150px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-}
-
-.title {
-  color: grey;
-  font-size: 18px;
-}
-
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
-
-button:hover, a:hover {
-
-  opacity: 0.7;
-}
-
-.Dharun-C {
-  position: fixed;
-  left: 550px;
-  top: 150px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-}
-
-
-.Hrithik {
-  position: fixed;
-  left: 950px;
-  top: 150px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
 }
