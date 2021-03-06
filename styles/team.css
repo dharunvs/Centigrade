@@ -54,8 +54,8 @@
   height: 400px;
 }
 .member2:hover {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
 .member3:hover {
   width: 400px;
@@ -66,7 +66,7 @@
   transform: translateY(0%);
 }
 .member2:hover .card2 {
-  transform: translateY(0%);
+  transform: translateX(0%);
 }
 .member3:hover .card3 {
   transform: translateY(0%);

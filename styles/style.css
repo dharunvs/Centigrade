@@ -29,7 +29,8 @@ body {
   transform: translateX(0%);
 }
 .gallery {
-  background-image: linear-gradient(135deg, #feb692 10%, #ea5455 100%);
+  background-color: #E0C3FC;
+  background-image: linear-gradient(148deg, #E0C3FC 0%, #8EC5FC 100%);
   transform: translateX(100%);
 }
 .about {
@@ -37,12 +38,9 @@ body {
   transform: translateX(200%);
 }
 .team {
-  background: linear-gradient(
-    167deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(69, 206, 252, 1) 100%
-  );
+  background-color: #FBDA61;
+  background-image: linear-gradient(315deg, #FBDA61 0%, #FF5ACD 100%);
+
   transform: translateX(300%);
 }
 .contact {
@@ -110,7 +108,7 @@ li {
   position: fixed;
   top: 0;
   left: 0%;
-  background-color: rgb(1, 0, 31);
+  background: #004170;
   width: 100%;
   height: 100%;
   display: flex;
@@ -123,18 +121,20 @@ li {
   position: fixed;
   top: 0;
   left: 0%;
-  background-color: rgb(87, 100, 128);
   width: 100%;
   height: 100%;
+  background-color: rgb(87, 100, 128);
   transform: translate(0%, 100%);
 }
 
 .intro-text {
   font-size: 2.2rem;
+  background: #004170;
 }
 .intro-text h1,
 .intro-text h2 {
   color: aliceblue;
+  background: #004170;
 }
 
 .hide {
