@@ -50,8 +50,8 @@ body {
   transform: translateX(400%);
 }
 header {
-  position: fixed;
-  height: 13vh;
+  position: absolute;
+  height: 10vh;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
@@ -96,7 +96,7 @@ li {
 }
 
 #shop {
-  padding: 5px 10px;
+  padding: 10px 20px;
   background-color: #ffffff65;
   color: var(--color-blue);
   transition: all 100ms ease-in-out;
