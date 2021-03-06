@@ -3,6 +3,10 @@
   src: url("../fonts/Poppins-Regular.ttf");
 }
 
+html {
+  --color-blue: rgb(0, 2, 117);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,13 +17,14 @@
 body {
   height: 100vh;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .landing,
 .gallery,
 .about,
 .team,
-.contact {
+.contact,
+.shop {
   height: 100vh;
   width: 100%;
   position: absolute;
@@ -29,8 +34,7 @@ body {
   transform: translateX(0%);
 }
 .gallery {
-  background-color: #E0C3FC;
-  background-image: linear-gradient(148deg, #E0C3FC 0%, #8EC5FC 100%);
+  background-image: linear-gradient(135deg, #feb692 10%, #ea5455 100%);
   transform: translateX(100%);
 }
 .about {
@@ -38,16 +42,17 @@ body {
   transform: translateX(200%);
 }
 .team {
-  background-color: #FBDA61;
-  background-image: linear-gradient(315deg, #FBDA61 0%, #FF5ACD 100%);
-
+  background-image: linear-gradient(315deg, #fbda61 0%, #ff5acd 100%);
   transform: translateX(300%);
 }
 .contact {
   background-image: linear-gradient(135deg, #fdd819 10%, #e80505 100%);
   transform: translateX(400%);
 }
-
+.shop {
+  background-image: linear-gradient(135deg, #e2b0ff 10%, #9f44d3 100%);
+  transform: translateX(500%);
+}
 header {
   position: absolute;
   height: 10vh;
@@ -59,6 +64,7 @@ header {
   text-align: center;
   background-color: rgba(240, 248, 255, 0.527);
   z-index: 100;
+  transition: all 100ms ease-in-out;
 }
 
 .nav-container {
@@ -79,25 +85,29 @@ li {
   cursor: pointer;
 }
 
-.nav-links a,
-.contact-link a,
-#logo a {
-  text-decoration: none;
-  color: rgb(0, 2, 117);
-}
-
 #current {
   font-weight: bold;
 }
 
 .nav-link {
+  color: var(--color-blue);
   transition: all 100ms ease-in-out;
 }
 
 .nav-link:hover {
   font-size: 1.4rem;
   font-weight: bold;
-  color: rgb(0, 47, 148);
+}
+
+#shop {
+  padding: 10px 20px;
+  background-color: #ffffff65;
+  color: var(--color-blue);
+  transition: all 100ms ease-in-out;
+}
+
+#shop:hover {
+  background-color: #ffffffc9;
 }
 
 .active {
@@ -106,9 +116,9 @@ li {
 
 .intro {
   position: fixed;
-  top: 0;
+  top: 0%;
   left: 0%;
-  background: #004170;
+  background-color: rgb(1, 0, 31);
   width: 100%;
   height: 100%;
   display: flex;
@@ -121,20 +131,19 @@ li {
   position: fixed;
   top: 0;
   left: 0%;
+  background-color: rgb(87, 100, 128);
   width: 100%;
   height: 100%;
-  background-color: rgb(87, 100, 128);
   transform: translate(0%, 100%);
 }
 
 .intro-text {
   font-size: 2.2rem;
-  background: #004170;
 }
+
 .intro-text h1,
 .intro-text h2 {
   color: aliceblue;
-  background: #004170;
 }
 
 .hide {

@@ -6,6 +6,7 @@
   width: 70%;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  position: absolute;
 }
 
 .member {
@@ -15,6 +16,7 @@
   overflow: hidden;
   margin: auto;
   transition: all 200ms ease-in-out;
+  position: relative;
 }
 .member .card {
   z-index: 4;
@@ -34,17 +36,18 @@
   margin: 20px;
   color: rgb(109, 0, 76);
 }
-.fa fa-dribbble:hover{
-  transform: scaleX(0.5);
+.fa-github,
+.fa-paper-plane {
+  font-size: 1.8rem;
+  margin: 10px 5px;
+  color: black;
 }
-.card  {
-  margin-top: 0px;
-  text-decoration: none;
-  color: aliceblue;
-  border-radius: 5px;
-  background-color: rgb(74, 0, 109);
-  padding: 5px 10px;
+
+.fa-github:hover,
+.fa-paper-plane:hover {
+  color: rgb(0, 0, 185);
 }
+
 .member img {
   position: relative;
   z-index: -1;
@@ -56,8 +59,8 @@
   height: 400px;
 }
 .member2:hover {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 .member3:hover {
   width: 400px;
@@ -68,11 +71,12 @@
   transform: translateY(0%);
 }
 .member2:hover .card2 {
-  transform: translateX(0%);
+  transform: translateY(0%);
 }
 .member3:hover .card3 {
   transform: translateY(0%);
 }
-p .team{
-  color: black;
+
+img {
+  width: 100%;
 }

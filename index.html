@@ -16,20 +16,22 @@
 <body>
     <header>
         <div class="logo">
-            <h2 id="logo"><a href="https://github.com/dharunvs/Centigrade" target="_blank" rel="noopener noreferrer">Centigrade</a></h2>
+            <h2 id="logo">Centigrade</h2>
         </div>
         <div class="nav-container">
             <nav>
                 <ul class="nav-links">
-                    <li class="nav-link active" onclick="pageAnimate('landing')">Home</li>
-                    <li class="nav-link" onclick="pageAnimate('gallery')">Gallery</li>
-                    <li class="nav-link" onclick="pageAnimate('about')">About</li>
-                    <li class="nav-link" onclick="pageAnimate('team')">Team</li>
+                    <li class="nav-link" id="landing" onclick="pageAnimate('landing')">Home</li>
+                    <li class="nav-link" id="gallery" onclick="pageAnimate('gallery')">Gallery</li>
+                    <li class="nav-link" id="about" onclick="pageAnimate('about')">About</li>
+                    <li class="nav-link" id="team" onclick="pageAnimate('team')">Team</li>
+                    <li class="nav-link" id="contact" onclick="pageAnimate('contact')">Contact</li>
                 </ul>
             </nav>
         </div>
-        <div class="contact-link">
-            <li class="nav-link" onclick="pageAnimate('contact')">Contact Us</li>
+        <div class="shop-link">
+            <li id="shop" onclick="pageAnimate('shop')">Shop Now</li>
+            
         </div>
 
         <div class="intro">
@@ -53,8 +55,11 @@
 
                     <div class="card card1">
                         <h1>Dharun V S</h1>
-                        <p> Reach us!</p>
-                        <a href="https://github.com/dharunvs" target="__blank"><i class="fab fa-github"></i> </a>
+                        <h3> Reach us!</h3>
+                        <p>
+                            <a class="github" href="https://github.com/dharunvs" target="__blank"><i class="fab fa-github"></i></a>
+                            <a class="mail" href="mailto:dharunsivakumar002@gmail.com" target="__blank"><i class="fas fa-paper-plane"></i></a>
+                        </p>
                     </div>
                     <img class="img1" src="https://avatars.githubusercontent.com/u/72387676?s=400&u=ba8e1ee77546c45d47036fb1922995bac5218382&v=4" alt="Dharun VS" style="width:100%">
 
@@ -64,10 +69,13 @@
 
                     <div class="card card2">
                         <h1>Dharun C</h1>
-                        <p> Reach us!</p>
-                        <a class="github" href="https://github.com/Dharundds" target="__blank"><i class="fab fa-github"></i></a>
+                        <h3> Reach us!</h3>
+                        <p>
+                            <a class="github" href="https://github.com/Dharundds" target="__blank"><i class="fab fa-github"></i></a>
+                            <a class="mail" href="mailto:hrithikmj003@gmail.com" target="__blank"><i class="fas fa-paper-plane"></i></a>
+                        </p>
                     </div>
-                    <img class="img2" src="https://avatars.githubusercontent.com/u/76607616?s=400&u=7d34547eac0b82e2d3d5b6bb709565dd05682229&v=4" alt="Dharun C" style="">
+                    <img class="img2" src="https://avatars.githubusercontent.com/u/76607616?s=400&u=7d34547eac0b82e2d3d5b6bb709565dd05682229&v=4" alt="Dharun C" style="width:100%">
 
                 </div>
 
@@ -75,9 +83,11 @@
 
                     <div class="card card3">
                         <h1>Hrithik M J</h1>
-                        <p>Reach us!</p>
-                        <a class="github" href="https://github.com/HrithikMJ"  target="__blank"><i class="fab fa-github"></i></a>
-                        <a class="mail" href="mailto:hrithikmj003@gmail.com" target="__blank"><i class="fas fa-paper-plane"></i></a>
+                        <h3>Reach us!</h3>
+                        <p>
+                            <a class="github" href="https://github.com/HrithikMJ"  target="__blank"><i class="fab fa-github"></i></a>
+                            <a class="mail" href="mailto:hrithikmj003@gmail.com" target="__blank"><i class="fas fa-paper-plane"></i></a>
+                        </p>
                     </div>
                     <img class="img3" src="https://avatars.githubusercontent.com/u/31767239?s=400&u=60cbb0cfc91e69c6e915d41197e12f3bc0f19cb8&v=4" alt="Hrithik MJ" style="width:100%">
 
@@ -85,7 +95,7 @@
 
             </div>
         </div>
-
+        
         <div class="contact">
 
             <div class="main-block">
@@ -95,27 +105,25 @@
                     <i class="fas fa-mail-bulk"></i>
                 </div>
 
-          <form id="myForm">
-            <h1>Contact Us</h1>
-            <div class="info">
-              <input name="Full Name" placeholder="Full name" />
-              <input type="email" name="Email" placeholder="Email" />
-              <input name="Phone No" placeholder="Phone number" />
-              <textarea
-                rows="4"
-                name="Message"
-                placeholder="Enter your message"
-              ></textarea>
+                <form action="#">
+                    <h1>Contact Us</h1>
+                        <div class="info">
+                            <input class="fname" type="text" name="name" placeholder="Full name">
+                            <input type="text" name="name" placeholder="Email">
+                            <input type="text" name="name" placeholder="Phone number">
+                            <textarea rows="4" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" onclick="SubForm()" href="/">Submit</button>
+                </form>
             </div>
-            <button onclick="SubForm()" type="button" href="/">Submit</button>
-            <div class="submitted">Form submitted successfully</div>
-          </form>
-            </div>
+
+        </div>
+        <div class="shop">
 
         </div>
     </div>
 
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
     <script src="./scripts/app.js"></script>
     <script

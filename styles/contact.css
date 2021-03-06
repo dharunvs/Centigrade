@@ -16,7 +16,9 @@ form {
   box-shadow: 0 2px 5px #f5f5f5;
   background: #f5f5f5;
 }
-.fas {
+.fa-envelope,
+.fa-at,
+.fa-mail-bulk {
   margin: 25px 10px 0;
   font-size: 72px;
   color: #fff;
@@ -79,45 +81,5 @@ button:hover {
   .fa-mail-bulk {
     margin-top: 2%;
     margin-left: 28%;
-  }
-}
-.submitted {
-  background-color: aqua;
-  color: #000000;
-  border-radius: 5px;
-  padding: 10px 20px;
-  position: fixed;
-  left: 50%;
-  bottom: 40px;
-  z-index: 1;
-  transform: translate(-50%);
-  visibility: hidden;
-}
-
-
-.submitted.show {
-  visibility: visible;
-  animation: anim 0.5s, anim2 0.5 1.5s;
-}
-
-@keyframes anim {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 40px;
-    opacity: 1;
-  }
-}
-
-@keyframes anim2 {
-  from {
-    bottom: 40px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
   }
 }
