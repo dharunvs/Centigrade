@@ -41,7 +41,8 @@ function test(){
  }
   
 function emailValidation(){
-    if(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[1-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(b))   {
+    var b = document.forms["myForm"]["Email"].value; 
+    if(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[1-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test())   {
         return true
     }   
         alert("Entered Email is not in email address format")
