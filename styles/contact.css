@@ -81,3 +81,31 @@ button:hover {
     margin-left: 28%;
   }
 }
+
+
+.submitted.show {
+  visibility: visible;
+  animation: anim 0.5s, anim2 0.5 1.5s;
+}
+
+@keyframes anim {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 40px;
+    opacity: 1;
+  }
+}
+
+@keyframes anim2 {
+  from {
+    bottom: 40px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
