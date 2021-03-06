@@ -37,12 +37,15 @@ pageAnimate = (page) => {
 
     for (i in pages){
         document.getElementById(pages[i]).style.fontSize = '1rem';
+        document.getElementById(pages[i]).style.fontWeight = 'normal';
     };
     if (page != 'shop'){
         document.getElementById(currentPage).style.fontSize = '1.4rem';
+        document.getElementById(currentPage).style.fontWeight = 'bold';
     }
     else if(page == 'shop'){
         document.getElementById(currentPage).style.fontSize = '1.2rem';
+        document.getElementById(currentPage).style.fontWeight = 'bold';
     }
-    document.getElementById(currentPage).style.fontWeight = 'bold';
+
 };
