@@ -51,7 +51,7 @@ body {
 }
 header {
   position: fixed;
-  height: 10vh;
+  height: 13vh;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
@@ -91,12 +91,12 @@ li {
 }
 
 .nav-link:hover {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
 #shop {
-  padding: 10px 20px;
+  padding: 5px 10px;
   background-color: #ffffff65;
   color: var(--color-blue);
   transition: all 100ms ease-in-out;
