@@ -68,7 +68,7 @@ header {
 }
 nav {
   width: 100%;
-  transition: all 200ms ease-in-out;
+  transition: all 0ms ease-in-out;
 }
 .nav-links,
 li {
