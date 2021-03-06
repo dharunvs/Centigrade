@@ -34,9 +34,11 @@
   margin: 20px;
   color: rgb(109, 0, 76);
 }
-
-.card a {
-  margin-top: 5px;
+.fa fa-dribbble:hover{
+  transform: scaleX(0.5);
+}
+.card  {
+  margin-top: 0px;
   text-decoration: none;
   color: aliceblue;
   border-radius: 5px;
@@ -70,4 +72,7 @@
 }
 .member3:hover .card3 {
   transform: translateY(0%);
+}
+p .team{
+  color: black;
 }
