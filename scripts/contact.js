@@ -20,10 +20,14 @@ function test(){
   
    if (a==" "||b==""||c==""||d==""){
             alert("atleast one field you left blank");
-            return false;                       
-   }
+            return false;    
+        }       
+
+  
    else {
-        console.log("hi buddy")
+     
+        let x = emailValidation();
+        if(x===true){
         var s = document.querySelector(".submitted");
         s.classList.add("show");
   
@@ -32,7 +36,14 @@ function test(){
           }, 2000);
                            return true;
   
-                          
+        }
     }
  }
   
+function emailValidation(){
+    if(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[1-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(b))   {
+        return true
+    }   
+        alert("Entered Email is not in email address format")
+        return false
+}
