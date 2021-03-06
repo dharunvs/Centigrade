@@ -51,7 +51,7 @@ body {
 }
 header {
   position: absolute;
-  height: 10vh;
+  height: 12vh;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
@@ -96,7 +96,7 @@ li {
 }
 
 #shop {
-  padding: 10px 20px;
+  padding: 4px 15px;
   background-color: #ffffff65;
   color: var(--color-blue);
   transition: all 100ms ease-in-out;
@@ -108,7 +108,7 @@ li {
 
 .fa-shopping-cart {
   color: var(--color-blue);
-  margin-left: 5px;
+  margin-left: 3px;
 }
 
 .active {
