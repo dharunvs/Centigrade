@@ -117,10 +117,15 @@
                 <form action="#">
                     <h1>Contact Us</h1>
                         <div class="info">
-                            <input class="fname" type="text" name="name" placeholder="Full name">
-                            <input type="text" name="name" placeholder="Email">
-                            <input type="text" name="name" placeholder="Phone number">
-                            <textarea rows="4" placeholder="Enter your message"></textarea>
+                           <input name="Full Name" placeholder="Full name" required />
+              <input type="email" name="Email" placeholder="Email" required />
+              <input name="Phone No" placeholder="Phone number" required />
+              <textarea
+                rows="4"
+                name="Message"
+                placeholder="Enter your message" 
+                required
+              ></textarea>
                         </div>
                         <button type="button" onclick="SubForm()" >Submit</button>
                 </form>
