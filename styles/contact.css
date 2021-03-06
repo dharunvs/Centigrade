@@ -81,6 +81,18 @@ button:hover {
     margin-left: 28%;
   }
 }
+.submitted {
+  background-color: aqua;
+  color: #000000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  z-index: 1;
+  transform: translate(-50%);
+  visibility: hidden;
+}
 
 
 .submitted.show {
