@@ -11,7 +11,7 @@ var currentPage = 'landing'
 document.getElementById(currentPage).style.fontWeight = 'bold';
 
 pageAnimate = (page) => {
-    
+
     var distance = 0
     if (page == 'landing'){
         distance = 0;
@@ -36,9 +36,8 @@ pageAnimate = (page) => {
     tl.to('.pages', {x : ''+distance+'%', duration : 0.5});
 
     for (i in pages){
-        document.getElementById(pages[i]).style.fontWeight = 'normal';
+        document.getElementById(pages[i]).style.fontSize = '1rem';
     };
-    document.getElementById(currentPage).style.fontWeight = 'bolder';
+    document.getElementById(currentPage).style.fontSize = '1.3rem';
+    document.getElementById(currentPage).style.fontWeight = 'bold';
 };
-
-
