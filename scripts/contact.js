@@ -21,18 +21,26 @@ function test(){
    if (a==" "||b==""||c==""||d==""){
             alert("atleast one field you left blank");
             return false;                       
-   }
-   else {
-        console.log("hi buddy")
-        var s = document.querySelector(".submitted");
-        s.classList.add("show");
-  
-        setTimeout(() => {
-            s.classList.remove("show");
-          }, 2000);
-                           return true;
-  
-                          
+   }else {
+     
+    let x = emailValidation();
+    if(x===true){
+    var s = document.querySelector(".submitted");
+    s.classList.add("show");
+
+    setTimeout(() => {
+        s.classList.remove("show");
+      }, 2000);
+                       return true;
+
     }
- }
-  
+}
+}
+ function emailValidation(){
+    var b = document.forms["myForm"]["Email"].value; 
+    if(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[1-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(b))   {
+        return true
+    }   
+        alert("Entered Email is not in email address format")
+        return false
+}
