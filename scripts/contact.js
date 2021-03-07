@@ -60,8 +60,12 @@ SubForm = () => {
 }
 
 successAnimation = () => {
-    const submit = document.querySelector(".submitted");
+     const submit = document.querySelector(".submitted");
     submit.classList.add("show")
+    setTimeout(() => {
+        submit.classList.remove("show");
+      }, 3000);
+
 
 
 }
