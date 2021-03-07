@@ -46,7 +46,6 @@
 .fa-github:hover,
 .fa-paper-plane:hover {
   color: rgb(0, 0, 185);
-  transform: scale(1.5);
 }
 
 .member img {
