@@ -100,23 +100,12 @@ form button:hover {
 
 .submitted.show {
   visibility: visible;
-  animation: anim 0.5s, anim2 0.5 1.5s;
+ animation: anim 3s;
 }
 
 @keyframes anim {
   from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 40px;
-    opacity: 1;
-  }
-}
-
-@keyframes anim2 {
-  from {
-    bottom: 40px;
+    bottom: 60px;
     opacity: 1;
   }
   to {
@@ -124,7 +113,6 @@ form button:hover {
     opacity: 0;
   }
 }
-
 #popup {
   display: none;
   position: absolute;
