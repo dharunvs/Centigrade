@@ -100,7 +100,7 @@ form button:hover {
 
 .submitted.show {
   visibility: visible;
- animation: anim 3s;
+  animation: anim 3s;
 }
 
 @keyframes anim {
@@ -113,8 +113,7 @@ form button:hover {
     opacity: 0;
   }
 }
-#popup {
-  display: none;
+.popup {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -124,6 +123,14 @@ form button:hover {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.616);
   border-radius: 5px;
+  opacity: 0;
+  top: -20%;
+  transition: all 300ms ease-in-out;
+}
+
+.popup.active {
+  opacity: 1;
+  top: 50%;
   transition: all 200ms ease-in-out;
 }
 
@@ -136,7 +143,7 @@ form button:hover {
   transform: translate(-50%, -50%);
 }
 
-#popup button {
+.popup button {
   position: absolute;
   top: 80%;
   left: 50%;
@@ -150,6 +157,6 @@ form button:hover {
   outline: none;
 }
 
-#popup button:hover {
+.popup button:hover {
   background: #2371a0;
 }

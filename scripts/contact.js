@@ -60,7 +60,7 @@ SubForm = () => {
 }
 
 successAnimation = () => {
-     const submit = document.querySelector(".submitted");
+    const submit = document.querySelector(".submitted");
     submit.classList.add("show")
     setTimeout(() => {
         submit.classList.remove("show");
@@ -71,11 +71,12 @@ successAnimation = () => {
 }
 
 errorAnimation = () => {
-    const popup = document.getElementById('popup');
-    popup.style.display = 'block'
+    let popup = document.getElementsByClassName('popup');
+    popup[0].classList.add('active')
+
 }
 
 okay = () => {
-    const popup = document.getElementById('popup');
-    popup.style.display = 'none'
+    let popup = document.getElementsByClassName('popup');
+    popup[0].classList.remove('active')
 }
