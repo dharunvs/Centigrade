@@ -50,7 +50,7 @@ body {
   transform: translateX(400%);
 }
 header {
-  position: absolute;
+  position: fixed;
   height: 10vh;
   width: 100%;
   display: grid;
@@ -68,7 +68,7 @@ header {
 }
 nav {
   width: 100%;
-  transition: all 0ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .nav-links,
 li {
@@ -91,7 +91,7 @@ li {
 }
 
 .nav-link:hover {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 

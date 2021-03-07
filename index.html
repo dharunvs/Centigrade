@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/contact.css">
     <link rel="stylesheet" href="./styles/team.css">
     <link rel="stylesheet" href="./styles/landing.css">
+    <link rel="stylesheet" href="./styles/shop.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <title>Centigrade👾</title>
@@ -31,7 +32,7 @@
         </div>
         <div class="shop-link">
             <li id="shop" onclick="pageAnimate('shop')"><p>Shop Now <i class="fas fa-shopping-cart"></i></p></li>
-
+            
         </div>
 
         <div class="intro">
@@ -45,11 +46,13 @@
 
         <div class="landing">
             <div class="landing-content">
-                
+                <section id="landing-section">
+                    <div id="root"></div>
+                </section>
             </div>
-
+            
         </div>
-
+        
         <div class="about"></div>
 
         <div class="team">
@@ -100,7 +103,7 @@
 
             </div>
         </div>
-
+        
         <div class="contact">
 
             <div class="main-block">
@@ -113,27 +116,26 @@
                 <form action="#">
                     <h1>Contact Us</h1>
                         <div class="info">
-                           <input name="Full Name" placeholder="Full name" required />
-              <input type="email" name="Email" placeholder="Email" required />
-              <input name="Phone No" placeholder="Phone number" required />
-              <textarea
-                rows="4"
-                name="Message"
-                placeholder="Enter your message"
-                required
-              ></textarea>
+                            <input class="fname" type="text" name="name" placeholder="Full name">
+                            <input type="text" name="name" placeholder="Email">
+                            <input type="text" name="name" placeholder="Phone number">
+                            <textarea rows="4" placeholder="Enter your message"></textarea>
                         </div>
-                        <button type="button" onclick="SubForm()" >Submit</button>
+                        <button type="submit" onclick="SubForm()" href="/">Submit</button>
                 </form>
             </div>
 
         </div>
         <div class="shop">
-
+            <div class="shop-content">
+                <section id="shop-section">
+                    
+                </section>
+            </div>
         </div>
     </div>
 
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
     <script src="./scripts/app.js"></script>
     <script
@@ -142,5 +144,6 @@
     crossorigin="anonymous"></script>
     <script src="./scripts/contact.js"></script>
     <script src="./scripts/team.js"></script>
+    <script src="./scripts/shop.js"></script>
 </body>
 </html>
