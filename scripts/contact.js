@@ -1,46 +1,77 @@
-function SubForm (){
+const popup = document.getElementById('popup-message');
+
+Validate = () => {
+    var name = document.forms["myForm"]["Full Name"].value;
+    var email = document.forms["myForm"]["Email"].value;
+    var number = document.forms["myForm"]["Phone No"].value;
+    var message = document.forms["myForm"]["Message"].value;
+    let messages = [];
+
+    let state = false
+
+    if (name == " " || email == "" || number == "" || message == ""){
+        messages.push("Fill all details.");
+        popup.innerText = messages.join(", ")
+    }
+    else if (emailValidate()){
+        messages.push("Enter valid email.");
+        popup.innerText = messages.join(", ")
+    }
+    else{
+        state = true
+    }
+
+    if (state == true){
+        SubForm();
+    }
+    else{
+        errorAnimation()
+    }
+}
+
+emailValidate = () => {
+    var email = document.forms["myForm"]["Email"].value; 
+    if(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[1-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email))   {
+        return false
+    }
+    else{
+        return true
+    }
+}
+
+
+SubForm = () => {
     $.ajax({
         url:"https://api.apispreadsheets.com/data/9087/",
         type:"post",
         data:$("#myForm").serializeArray(),
-        success: function(){
-                let x = test();
-                return x;          
+        success: () => {
+            document.forms["myForm"]["Full Name"].value = "";
+            document.forms["myForm"]["Email"].value = "";
+            document.forms["myForm"]["Phone No"].value = "";
+            document.forms["myForm"]["Message"].value = "";
+
+            successAnimation()
         },
-        error: function(){
-            alert("There was an error :(")
+        error: () => {
+            errorAnimation()
         }
-    });
+    })
 }
-function test(){
-   var a = document.forms["myForm"]["Full Name"].value;
-   var b = document.forms["myForm"]["Email"].value;                      
-   var c = document.forms["myForm"]["Phone No"].value;
-   var d = document.forms["myForm"]["Message"].value;
-  
-   if (a==" "||b==""||c==""||d==""){
-            alert("atleast one field you left blank");
-            return false;                       
-   }else {
-     
-    let x = emailValidation();
-    if(x===true){
-    var s = document.querySelector(".submitted");
-    s.classList.add("show");
 
-    setTimeout(() => {
-        s.classList.remove("show");
-      }, 2000);
-                       return true;
+successAnimation = () => {
+    const submit = document.querySelector(".submitted");
+    submit.classList.add("show")
 
-    }
+
 }
+
+errorAnimation = () => {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'block'
 }
- function emailValidation(){
-    var b = document.forms["myForm"]["Email"].value; 
-    if(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[1-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(b))   {
-        return true
-    }   
-        alert("Entered Email is not in email address format")
-        return false
+
+okay = () => {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'none'
 }
