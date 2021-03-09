@@ -10,11 +10,15 @@ Validate = () => {
     let state = false
 
     if (name == " " || email == "" || number == "" || message == ""){
-        messages.push("Fill all details.");
+        messages.push("Fill all details");
         popup.innerText = messages.join(", ")
     }
     else if (emailValidate()){
-        messages.push("Enter valid email.");
+        messages.push("Enter valid email");
+        popup.innerText = messages.join(", ")
+    }
+    else if (number.length != 10){
+        messages.push("Enter valid phone number")
         popup.innerText = messages.join(", ")
     }
     else{
