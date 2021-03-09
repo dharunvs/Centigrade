@@ -1,16 +1,14 @@
 .landing-content {
-  height: 80vh;
-  width: 90%;
-  background-color: rgba(240, 248, 255, 0.267);
+  height: 90vh;
+  width: 100%;
   position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 10vh;
   overflow-y: scroll;
 }
 
 section {
   padding: 20px;
+  margin-top: 30px;
   max-width: calc(100% - 15px);
 }
 
