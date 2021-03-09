@@ -135,12 +135,16 @@
                 </div>
                 <form id="myForm">
                     <h1>Contact Us</h1>
-                    <div class="info">
-                        <input name="Full Name" placeholder="Full name" />
-                        <input name="Email" placeholder="Email" />
-                        <input name="Phone No" placeholder="Phone number" />
-                        <textarea rows="4" name="Message" placeholder="Enter your message"></textarea>
-                    </div>
+                   <div class="info">
+              <input name="Full Name" placeholder="Full name" required />
+              <input name="Email" placeholder="Email" required />
+              <input name="Phone No" placeholder="Phone number" required />
+              <textarea
+                rows="4"
+                name="Message"
+                placeholder="Enter your message"
+                required
+              ></textarea>
                     <button type="button" onclick="Validate()" href="/">Submit</button>
                     <div class="submitted">Form submitted successfully</div>
                 </form>
