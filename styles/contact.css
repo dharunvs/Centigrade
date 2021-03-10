@@ -1,15 +1,10 @@
-body {
-  background: black;
-}
-
 .main-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-
-  cursor: pointer;
+  min-height: 90vh;
+  top: 10vh;
 }
 form {
   padding: 25px;
@@ -48,6 +43,7 @@ textarea {
 input::placeholder {
   color: rgb(114, 106, 106);
 }
+
 form button {
   width: calc(100% - 18px);
   padding: 10px;
@@ -63,8 +59,22 @@ form button:hover {
   background: #2371a0;
 }
 
+.left-part {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link {
+  width: 260px;
+  text-decoration: none;
+}
+
 .main-block .icon {
   position: relative;
+  display: flex;
   width: 80px;
   height: 80px;
   margin: 20px;
@@ -72,24 +82,38 @@ form button:hover {
   transition: all 0.8s;
 }
 
-.main-block .icon:hover {
-  background: #1877f2;
-  box-shadow: 0 0 20px #e60073;
+.main-block .icon div {
+  margin-right: 10px;
+}
+.main-block .icon .social-link-text {
+  margin-top: 25px;
 }
 
-.main-block .icon:hover:nth-child(2) {
-  background: #1877f2;
-  box-shadow: 0 0 20px #1877f2;
+.left-part .icon p {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
 }
 
-.main-block .icon:hover:nth-child(3) {
+.left-part .social-link:hover .icon {
+  background: #1877f2;
+  margin-left: 10px;
+}
+
+.left-part .social-link:hover p {
+  opacity: 1;
+  transform: translateX(25px);
+}
+
+.main-block .social-link:hover .icon:nth-child(2) {
+  background: #1877f2;
+}
+
+.main-block .social-link:hover .icon:nth-child(3) {
   background: #e60073;
-  box-shadow: 0 0 20px #25d366;
 }
 
-.main-block .icon:hover:nth-child(5) {
+.main-block .social-link:hover .icon:nth-child(5) {
   background: #1da1f2;
-  box-shadow: 0 0 20px #1da1f2;
 }
 
 .main-block .icon i {
@@ -100,12 +124,18 @@ form button:hover {
   transform: translate(-50%, -50%);
 }
 
+.icon p {
+  text-decoration: none;
+  color: #0059ff;
+  font-weight: bold;
+}
+
 svg circle {
   stroke-dasharray: 150;
   transition: all 0.8s;
 }
 
-.main-block .icon:hover svg circle {
+.main-block .social-link:hover .icon svg circle {
   stroke-dasharray: 220;
 }
 
@@ -130,6 +160,7 @@ svg circle {
     margin-left: 28%;
   }
 }
+
 .submitted {
   background-color: aqua;
   color: #000000;
@@ -145,27 +176,62 @@ svg circle {
 
 .submitted.show {
   visibility: visible;
-  animation: anim 0.5s, anim2 0.5 1.5s;
+  animation: anim 3s;
 }
 
 @keyframes anim {
   from {
-    bottom: 0;
-    opacity: 0;
+    bottom: 60px;
+    opacity: 1;
   }
   to {
-    bottom: 40px;
-    opacity: 1;
+    bottom: 0;
+    opacity: 0;
   }
 }
+.popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 30vh;
+  background-color: rgba(255, 255, 255, 0.616);
+  border-radius: 5px;
+  opacity: 0;
+  top: -20%;
+  transition: all 300ms ease-in-out;
+}
 
-@keyframes anim2 {
-  from {
-    bottom: 40px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
-  }
+.popup.active {
+  opacity: 1;
+  top: 50%;
+  transition: all 200ms ease-in-out;
+}
+
+#popup-message {
+  font-size: 1.4rem;
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup button {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border: none;
+  background: #007dd1;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  outline: none;
+}
+
+.popup button:hover {
+  background: #2371a0;
 }
