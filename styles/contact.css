@@ -105,15 +105,15 @@ form button:hover {
   transform: translateX(25px);
 }
 
-.main-block .social-link:hover .icon:nth-child(2) {
+.main-block .social-link:hover .icon#second {
   background: #1877f2;
 }
 
-.main-block .social-link:hover .icon:nth-child(3) {
+.main-block .social-link:hover .icon#first {
   background: #e60073;
 }
 
-.main-block .social-link:hover .icon:nth-child(5) {
+.main-block .social-link:hover .icon#third {
   background: #1da1f2;
 }
 
