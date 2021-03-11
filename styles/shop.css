@@ -1,86 +1,15 @@
-/* ======== Colors ========== */
-:root {
-  --default-color: #e71247;
-  --default-color2: #d64569;
-  --dark-color: #222;
-  --dark-color-alt: #3c4858;
-  --grey-color: #f9fafd;
-  --grey-color-alt: #8492a6;
-  --yellow: #ffcc00;
-  --white: #fff;
-}
-
-/* ======== Base ========== */
-
-*,
-*::after,
-*::before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-size: 62.5%;
-}
-
-body {
-  position: relative;
-  font-family: "Dosis", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.6;
-  color: var(--dark-color);
-  background-color: var(--white);
-}
-
-li,
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-h2,
-h3,
-h4 {
-  font-weight: 600;
-}
-
-.container {
-  max-width: 114rem;
-  padding: 0 1rem;
-  margin: 0 auto;
-}
-
-@media only screen and (max-width: 992px) {
-  .container {
-    padding: 0 3rem;
-  }
-}
-
 .shop-content {
-  height: 80vh;
-  width: 90%;
-  background-color: rgba(240, 248, 255, 0.267);
+  height: 90vh;
+  width: 100%;
   position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 10vh;
   overflow-y: scroll;
 }
 
 section {
-  padding: 20px;
-  max-width: calc(100% - 15px);
+  width: calc(80% - 15px);
+  margin: auto;
+  padding: 0%;
 }
 
 .shop-content::-webkit-scrollbar {
@@ -90,91 +19,88 @@ section {
 .shop-content::-webkit-scrollbar-thumb {
   background-color: rgba(240, 248, 255, 0.5);
 }
-
+.new-arrival {
+  width: 100%;
+  margin-top: 20px;
+}
+.new-arrival-products {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .product {
+  width: 22%;
+  background-color: rgba(240, 248, 255, 0.24);
   display: flex;
   flex-direction: column;
-  padding: 2rem 1rem;
-  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
 }
 
-.product:hover {
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
-}
-
-.product .img__container {
-  height: 25rem;
+.img-container {
+  width: 80%;
+  height: 70%;
   overflow: hidden;
 }
 
-.img__container img {
-  transition: all 0.5s ease-in-out;
+img {
+  width: 100%;
 }
 
-.product:hover .img__container img {
-  transform: scale(1.05);
+.i1 {
+  width: 60%;
 }
 
-.rating svg {
-  width: 1.8rem;
-  height: 1.8rem;
-  fill: var(--yellow);
+.product-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.product__bottom {
-  padding-top: 1.6rem;
+.products-banner {
+  margin: 5vh 0px;
+  width: 100%;
+  height: 70vh;
+  background-color: rgba(240, 248, 255, 0.24);
 }
 
-.product__bottom h3 {
-  margin-bottom: 1rem;
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.product__bottom a:link,
-.product__bottom a:visited {
-  display: inline-block;
-  padding: 0.8rem 4rem;
-  background-color: var(--default-color);
-  color: var(--grey-color);
-  text-transform: uppercase;
-  font-weight: 500;
+.banner-nav {
+  margin: 10px;
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-color: rgba(240, 248, 255, 0.527);
+  color: darkblue;
+  letter-spacing: 2px;
 }
 
-@media only screen and (max-width: 567px) {
-  .product .img__container {
-    height: 15rem;
-  }
-
-  .rating svg {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-
-  .product__bottom a:link,
-  .product__bottom a:visited {
-    display: inline-block;
-    padding: 0.6rem 3rem;
-    font-size: 1.4rem;
-  }
-
-  .product__bottom h3 {
-    font-size: 1.6rem;
-  }
+.banner-display {
+  display: flex;
+  justify-content: space-around;
 }
 
-.featured__center {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem 0;
+.banner-display .right-part {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-@media only screen and (max-width: 996px) {
-  .featured__center {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.banner-description {
+}
+.banner-image-container {
+  height: 50vh;
 }
 
-@media only screen and (max-width: 768px) {
-  .featured__center {
-    grid-template-columns: 1fr 1fr;
-  }
+.banner-image-container img {
+  height: 110%;
+  width: auto;
+  margin: auto;
 }

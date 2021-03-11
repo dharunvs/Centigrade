@@ -9,7 +9,7 @@
 section {
   padding: 20px;
   margin-top: 30px;
-  max-width: calc(100% - 15px);
+  width: calc(100% - 15px);
 }
 
 .landing-content::-webkit-scrollbar {

@@ -11,7 +11,7 @@ var currentPage = 'landing'
 document.getElementById(currentPage).style.fontWeight = 'bold';
 
 pageAnimate = (page) => {
-
+    
     var distance = 0
     if (page == 'landing'){
         distance = 0;
@@ -43,3 +43,5 @@ pageAnimate = (page) => {
     document.getElementById(currentPage).style.fontWeight = 'bolder';
     document.getElementById(currentPage).style.color = 'black';
 };
+
+

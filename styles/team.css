@@ -37,16 +37,14 @@
   color: rgb(109, 0, 76);
 }
 .fa-github,
-.fa-at,
-#insta{
-  font-size: 3rem;
+.fa-paper-plane {
+  font-size: 1.8rem;
   margin: 10px 5px;
   color: black;
 }
 
 .fa-github:hover,
-#insta:hover,
-.fa-at:hover {
+.fa-paper-plane:hover {
   color: rgb(0, 0, 185);
 }
 
