@@ -106,15 +106,17 @@ form button:hover {
 }
 
 .main-block .social-link:hover .icon#second {
-  background: #1877f2;
+background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
 }
 
 .main-block .social-link:hover .icon#first {
-  background: #e60073;
+
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 
 .main-block .social-link:hover .icon#third {
-  background: #1da1f2;
+  background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
 }
 
 .main-block .icon i {
