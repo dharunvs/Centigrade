@@ -6,7 +6,7 @@ tl.to('.slider', {y : "-100%", duration : 1, delay: 1}, "-=2");
 tl.to('.intro', {y : "-100%", duration : 1}, "-=1");
 tl.fromTo('nav', {opacity : 0}, {opacity : 1, duration : 1});
 
-let pages = ['landing', 'about', 'team', 'contact', 'shop']
+let pages = ['landing',, 'team', 'contact', 'shop']
 var currentPage = 'landing'
 document.getElementById(currentPage).style.fontWeight = 'bold';
 
@@ -17,21 +17,17 @@ pageAnimate = (page) => {
         distance = 0;
         currentPage = 'landing';
     };
-    if (page == 'about'){
-        distance = -100;
-        currentPage = 'about';
-    };
     if (page == 'team'){
         currentPage = 'team';
-        distance = -200;
+        distance = -100;
     };
     if (page == 'contact'){
         currentPage = 'contact';
-        distance = -300;
+        distance = -200;
     };
     if (page == 'shop'){
         currentPage = 'shop';
-        distance = -400;
+        distance = -300;
     };
     tl.to('.pages', {x : ''+distance+'%', duration : 0.5});
 

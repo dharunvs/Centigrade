@@ -6,7 +6,7 @@
   overflow-y: scroll;
 }
 
-section {
+.shop-section {
   width: calc(80% - 15px);
   margin: auto;
   padding: 0%;
@@ -21,8 +21,17 @@ section {
 }
 .new-arrival {
   width: 100%;
-  margin-top: 20px;
 }
+
+.new-arrival h1 {
+  margin: 20px 0;
+  padding: 5px;
+  font-size: 2rem;
+  text-align: center;
+  background-color: rgba(240, 248, 255, 0.418);
+  color: rgb(0, 0, 0);
+}
+
 .new-arrival-products {
   width: 100%;
   display: flex;
@@ -56,6 +65,11 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.product-bottom h2 {
+  font-size: 1.1rem;
+  text-align: center;
 }
 
 .products-banner {
@@ -93,8 +107,6 @@ img {
   justify-content: space-around;
 }
 
-.banner-description {
-}
 .banner-image-container {
   height: 50vh;
 }

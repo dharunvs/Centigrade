@@ -6,7 +6,7 @@
   overflow-y: scroll;
 }
 
-section {
+.landing-section {
   padding: 20px;
   margin-top: 30px;
   width: calc(100% - 15px);
