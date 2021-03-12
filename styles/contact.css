@@ -13,20 +13,7 @@ form {
   box-shadow: 0 2px 5px #f5f5f5;
   background: #f5f5f5;
 }
-.fa-envelope,
-.fa-at,
-.fa-mail-bulk {
-  margin: 25px 10px 0;
-  font-size: 72px;
-  color: #fff;
-}
-.fa-envelope {
-  transform: rotate(-20deg);
-}
-.fa-at,
-.fa-mail-bulk {
-  transform: rotate(10deg);
-}
+
 
 form h1 {
   color: #0098c7;
