@@ -1,76 +1,91 @@
-.landing {
-  background-size: cover;
-  height: 100vh;
-}
-.landing .center {
+.landing-content {
+  height: 90vh;
+  width: 100%;
   position: absolute;
+  top: 10vh;
+  overflow-y: scroll;
+}
+
+.landing-section {
+  width: calc(100% - 15px);
+}
+
+.landing-content::-webkit-scrollbar {
+  width: 12px;
+}
+
+.landing-content::-webkit-scrollbar-thumb {
+  background-color: rgba(240, 248, 255, 0.5);
+}
+
+.landing-banner {
+  width: 90%;
+  height: 80vh;
+  position: absolute;
+  top: 50%;
   left: 50%;
-  top: 55%;
   transform: translate(-50%, -50%);
-  font-family: sans-serif;
-  user-select: none;
-}
-.center h1 {
-  color: white;
-  font-size: 60px;
-  width: 900px;
-  font-weight: bold;
-  text-align: center;
-}
-.center h2 {
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  margin-top: 0.5px;
-  width: 885px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(
+      to top,
+      rgb(17, 117, 231, 0.5),
+      rgba(136, 0, 133, 0.6)
+    ),
+    url("../images/Banner1.jpg") center;
+  background-size: cover;
 }
 
-.center h3 {
-  color: white;
-  font-size: 60px;
-  font-weight: bold;
-  margin-top: 0.5px;
-  width: 885px;
-  text-align: center;
+.landing-banner-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.center h4 {
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  margin-top: 0.5px;
-  width: 885px;
+.landing-banner-content h1,
+.landing-banner-content h2,
+.landing-banner-content h3,
+.landing-banner-content h4,
+.landing-banner-content h5 {
+  color: rgb(255, 255, 255);
+  margin: 5px;
   text-align: center;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.301);
 }
 
-.center h5 {
-  color: white;
-  font-size: 60px;
-  font-weight: bold;
-  margin-top: 0.5px;
-  width: 885px;
-  text-align: center;
-}
-
-.center .buttons {
-  margin: 35px 370px;
-}
-.buttons button {
-  height: 50px;
-  width: 150px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #ffb3b3;
-  background: red;
+.landing-banner-content button {
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
   outline: none;
+  border-radius: 20px;
+  background-color: aliceblue;
+  border: 2px solid rgba(240, 248, 255, 0);
+  transition: all 200ms ease-in-out;
+  font-size: 1rem;
   cursor: pointer;
-  border: 1px solid #cc0000;
-  border-radius: 25px;
-  transition: 0.4s;
-
 }
 
-.buttons button:hover {
-  background: #cc0000;
+.landing-banner-content button:hover {
+  border: 2px solid aliceblue;
+  background-color: rgba(240, 248, 255, 0);
+  color: aliceblue;
+}
+
+.landing-banner h1 {
+  font-size: 2.6rem;
+}
+.landing-banner h2 {
+  font-size: 2.4rem;
+}
+.landing-banner h3 {
+  font-size: 2.2rem;
+}
+.landing-banner h4 {
+  font-size: 2rem;
+}
+.landing-banner h5 {
+  font-size: 1.8rem;
 }

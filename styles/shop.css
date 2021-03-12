@@ -8,7 +8,7 @@
 
 .shop-section {
   width: calc(80% - 15px);
-  height: 220%;
+  height: 380%;
   margin: 8vh auto 10vh auto;
   padding: 0%;
   background-color: rgba(240, 248, 255, 0.281);
@@ -62,7 +62,10 @@
   background-color: rgba(240, 248, 255, 0.356);
 }
 
-.products-banner h1 {
+.featured {
+  transform: translateY(15vh);
+}
+.featured h1 {
   font-size: 2rem;
   width: 90%;
   margin: 0 auto 40px auto;
@@ -100,13 +103,34 @@
   transition: all 400ms ease-in-out;
 }
 
+.product .img-container .big1 {
+  width: 80%;
+}
+.product .img-container .big2 {
+  width: 75%;
+}
+.product .img-container .big3 {
+  width: 70%;
+}
+
 .product:hover {
-  background-color: rgba(240, 248, 255, 0.192);
+  background-color: rgba(240, 248, 255, 0.222);
 }
 
 .product:hover .img-container img {
-  width: 110%;
+  width: 120%;
 }
+
+.product:hover .img-container .big1 {
+  width: 95%;
+}
+.product:hover .img-container .big2 {
+  width: 90%;
+}
+.product:hover .img-container .big3 {
+  width: 85%;
+}
+
 .img-container {
   width: 80%;
   height: 70%;
@@ -146,6 +170,11 @@
   height: 70vh;
 }
 
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
 .banner-gallery {
   position: relative;
@@ -190,16 +219,14 @@
   margin-left: 100px;
 }
 
-/* .banner-buttons {
+.banner-buttons {
   display: flex;
   width: 65%;
   justify-content: space-between;
 }
 
 .banner-buttons button,
-.banner-buttons
-*/
-.banner-price {
+.banner-buttons .banner-price {
   width: 49%;
   background-color: rgba(255, 255, 255, 0.329);
   padding: 5px;
@@ -212,32 +239,8 @@
   transition: all 200ms ease-in-out;
 }
 
-.banner-buttons,
-.add-to-cart {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-button,
-.banner-price,
-.product .add-to-cart {
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 10px 60px -10px #ffcc00;
-  justify-content: space-between;
-  padding: 0 24px;
-  text-transform: uppercase;
-  cursor: pointer;
-  outline: none;
-  min-width: 200px;
-  line-height: 40px;
-  background: #e71247;
-  color: #fff;
-}
-
-.bamner-price {
-  margin: 10px;
-  min-width: 100px;
+.banner-buttons button:hover {
+  background-color: aliceblue;
 }
 .gallery-thumbnail {
   width: 90%;

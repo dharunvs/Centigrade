@@ -10,8 +10,8 @@
 }
 
 .member {
-  width: 300px;
-  height: 300px;
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
   overflow: hidden;
   margin: auto;
@@ -37,14 +37,14 @@
   color: rgb(109, 0, 76);
 }
 .fa-github,
-.fa-at{
+.fa-paper-plane {
   font-size: 1.8rem;
   margin: 10px 5px;
   color: black;
 }
 
 .fa-github:hover,
-.fa-at:hover {
+.fa-paper-plane:hover {
   color: rgb(0, 0, 185);
 }
 
