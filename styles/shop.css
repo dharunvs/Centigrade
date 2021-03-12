@@ -146,11 +146,11 @@
   height: 70vh;
 }
 
-.button-container {
+/* .button-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
-}
+} */
 
 .banner-gallery {
   position: relative;
@@ -195,14 +195,16 @@
   margin-left: 100px;
 }
 
-.banner-buttons {
+/* .banner-buttons {
   display: flex;
   width: 65%;
   justify-content: space-between;
 }
 
 .banner-buttons button,
-.banner-buttons .banner-price {
+.banner-buttons
+*/
+.banner-price {
   width: 49%;
   background-color: rgba(255, 255, 255, 0.329);
   padding: 5px;
@@ -215,8 +217,32 @@
   transition: all 200ms ease-in-out;
 }
 
-.banner-buttons button:hover {
-  background-color: aliceblue;
+.banner-buttons,
+.add-to-cart {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+button,
+.banner-price,
+.product .add-to-cart {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 60px -10px #ffcc00;
+  justify-content: space-between;
+  padding: 0 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  min-width: 200px;
+  line-height: 40px;
+  background: #e71247;
+  color: #fff;
+}
+
+.bamner-price {
+  margin: 10px;
+  min-width: 100px;
 }
 .gallery-thumbnail {
   width: 90%;
