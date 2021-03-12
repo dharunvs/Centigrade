@@ -1,226 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/contact.css">
-    <link rel="stylesheet" href="./styles/team.css">
-    <link rel="stylesheet" href="./styles/landing.css">
-    <link rel="stylesheet" href="./styles/shop.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="stylesheet" href="./styles/team.css" />
+    <link rel="stylesheet" href="./styles/landing.css" />
+    <link rel="stylesheet" href="./styles/shop.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"
+    />
     <title>Centigrade👾</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <div class="logo">
-            <h2 id="logo">Centigrade👾</h2>
-        </div>
-        <div class="nav-container">
-            <nav>
-                <ul class="nav-links">
-                    <li class="nav-link" id="landing" onclick="pageAnimate('landing')">Home</li>
-                    <li class="nav-link" id="team" onclick="pageAnimate('team')">Team</li>
-                    <li class="nav-link" id="contact" onclick="pageAnimate('contact')">Contact</li>
-                </ul>
-            </nav>
-        </div>
-        <div class="shop-link">
-            <li id="shop" onclick="pageAnimate('shop')"><p>Shop Now <i class="fas fa-shopping-cart"></i></p></li>
-            
-        </div>
+      <div class="logo">
+        <h2 id="logo">Centigrade👾</h2>
+      </div>
+      <div class="nav-container">
+        <nav>
+          <ul class="nav-links">
+            <li class="nav-link" id="landing" onclick="pageAnimate('landing')">
+              Home
+            </li>
+            <li class="nav-link" id="team" onclick="pageAnimate('team')">
+              Team
+            </li>
+            <li class="nav-link" id="contact" onclick="pageAnimate('contact')">
+              Contact
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="shop-link">
+        <li id="shop" onclick="pageAnimate('shop')">
+          <p>Shop Now <i class="fas fa-shopping-cart"></i></p>
+        </li>
+      </div>
 
-        <div class="intro">
-            <div class="intro-text">
-               <h1 class="hide"><span class="text">Centigrade👾</span></h1>
-            </div>
+      <div class="intro">
+        <div class="intro-text">
+          <h1 class="hide"><span class="text">Centigrade👾</span></h1>
         </div>
-        <div class="slider"></div>
+      </div>
+      <div class="slider"></div>
     </header>
     <div class="pages">
-
-        <div class="landing">
-            <div class="landing-content">
-                <section class="landing-section">
-                    A static website is one that has web pages stored on the server in the format that is sent to a client web browser. It is primarily coded in Hypertext Markup Language (HTML); Cascading Style Sheets (CSS) are used to control appearance beyond basic HTML. Images are commonly used to create the desired appearance and as part of the main content. Audio or video might also be considered "static" content if it plays automatically or is generally non-interactive. This type of website usually displays the same information to all visitors. Similar to handing out a printed brochure to customers or clients, a static website will generally provide consistent, standard information for an extended period of time. Although the website owner may make updates periodically, it is a manual process to edit the text, photos, and other content and may require basic website design skills and software. Simple forms or marketing examples of websites, such as classic website, a five-page website or a brochure website are often static websites, because they present pre-defined, static information to the user. This may include information about a company and its products and services through text, photos, animations, audio/video, and navigation menus.
-                    Static websites may still use server side includes (SSI) as an editing convenience, such as sharing a common menu bar across many pages. As the site's behavior to the reader is still static, this is not considered a dynamic site.
-                    Dynamic website
-                    Server-side programming language usage in 2016.
-                    Main articles: Dynamic web page and Web application
-                    A dynamic website is one that changes or customizes itself frequently and automatically. Server-side dynamic pages are generated "on the fly" by computer code that produces the HTML (CSS are responsible for appearance and thus, are static files). There are a wide range of software systems, such as CGI, Java Servlets and Java Server Pages (JSP), Active Server Pages and ColdFusion (CFML) that are available to generate dynamic web systems and dynamic sites. Various web application frameworks and web template systems are available for general-use programming languages like Perl, PHP, Python and Ruby to make it faster and easier to create complex dynamic websites.
-                    A site can display the current state of a dialogue between users, monitor a changing situation, or provide information in some way personalized to the requirements of the individual user. For example, when the front page of a news site is requested, the code running on the webserver might combine stored HTML fragments with news stories retrieved from a database or another website via RSS to produce a page that includes the latest information. Dynamic sites can be interactive by using HTML forms, storing and reading back browser cookies, or by creating a series of pages that reflect the previous history of clicks. Another example of dynamic content is when a retail website with a database of media products allows a user to input a search request, e.g. for the keyword Beatles. In response, the content of the web page will spontaneously change the way it looked before, and will then display a list of Beatles products like CDs, DVDs, and books. Dynamic HTML uses JavaScript code to instruct the web browser how to interactively modify the page contents. One way to simulate a certain type of dynamic website while avoiding the performance loss of initiating the dynamic engine on a per-user or per-connection basis is to periodically automatically regenerate a large series of static pages.
-                    A static website is one that has web pages stored on the server in the format that is sent to a client web browser. It is primarily coded in Hypertext Markup Language (HTML); Cascading Style Sheets (CSS) are used to control appearance beyond basic HTML. Images are commonly used to create the desired appearance and as part of the main content. Audio or video might also be considered "static" content if it plays automatically or is generally non-interactive. This type of website usually displays the same information to all visitors. Similar to handing out a printed brochure to customers or clients, a static website will generally provide consistent, standard information for an extended period of time. Although the website owner may make updates periodically, it is a manual process to edit the text, photos, and other content and may require basic website design skills and software. Simple forms or marketing examples of websites, such as classic website, a five-page website or a brochure website are often static websites, because they present pre-defined, static information to the user. This may include information about a company and its products and services through text, photos, animations, audio/video, and navigation menus.
-                    Static websites may still use server side includes (SSI) as an editing convenience, such as sharing a common menu bar across many pages. As the site's behavior to the reader is still static, this is not considered a dynamic site.
-                    Dynamic website
-                    Server-side programming language usage in 2016.
-                    Main articles: Dynamic web page and Web application
-                    A dynamic website is one that changes or customizes itself frequently and automatically. Server-side dynamic pages are generated "on the fly" by computer code that produces the HTML (CSS are responsible for appearance and thus, are static files). There are a wide range of software systems, such as CGI, Java Servlets and Java Server Pages (JSP), Active Server Pages and ColdFusion (CFML) that are available to generate dynamic web systems and dynamic sites. Various web application frameworks and web template systems are available for general-use programming languages like Perl, PHP, Python and Ruby to make it faster and easier to create complex dynamic websites.
-                    A site can display the current state of a dialogue between users, monitor a changing situation, or provide information in some way personalized to the requirements of the individual user. For example, when the front page of a news site is requested, the code running on the webserver might combine stored HTML fragments with news stories retrieved from a database or another website via RSS to produce a page that includes the latest information. Dynamic sites can be interactive by using HTML forms, storing and reading back browser cookies, or by creating a series of pages that reflect the previous history of clicks. Another example of dynamic content is when a retail website with a database of media products allows a user to input a search request, e.g. for the keyword Beatles. In response, the content of the web page will spontaneously change the way it looked before, and will then display a list of Beatles products like CDs, DVDs, and books. Dynamic HTML uses JavaScript code to instruct the web browser how to interactively modify the page contents. One way to simulate a certain type of dynamic website while avoiding the performance loss of initiating the dynamic engine on a per-user or per-connection basis is to periodically automatically regenerate a large series of static pages.
-                </section>
+      <div class="landing">
+        <div class="landing-content">
+          <div class="center">
+            <h1>Style</h1>
+            <h2>is a way to say</h2>
+            <h3>Who you are</h3>
+            <h4>without having to</h4>
+            <h5>speak</h5>
+            <div class="buttons">
+              <button onclick="pageAnimate('shop')">
+                Shop Now<i class="fas fa-shopping-cart"></i>
+              </button>
             </div>
-            
+          </div>
         </div>
-        
-        <div class="team">
+      </div>
 
-            <div class="team-members">
-
-                <div class="member member1">
-
-                    <div class="card card1">
-                        <h1>Dharun V S</h1>
-                        <h3> Reach us!</h3>
-                        <p>
-                            <a class="github" href="https://github.com/dharunvs" target="__blank"><i class="fab fa-github"></i></a>
-                            <a class="mail" href="mailto:dharunsivakumar002@gmail.com" target="__blank"><i class="fas fa-paper-plane"></i></a>
-                        </p>
-                    </div>
-                    <img class="img1" src="https://avatars.githubusercontent.com/u/72387676?s=400&u=ba8e1ee77546c45d47036fb1922995bac5218382&v=4" alt="Dharun VS" style="width:100%">
-
-                </div>
-
-                <div class="member member2">
-
-                    <div class="card card2">
-                        <h1>Dharun C</h1>
-                        <h3> Reach us!</h3>
-                        <p>
-                            <a class="github" href="https://github.com/Dharundds" target="__blank"><i class="fab fa-github"></i></a>
-                            <a class="mail" href="mailto:dharundds@gmail.com" target="__blank"><i class="fas fa-paper-plane"></i></a>
-                        </p>
-                    </div>
-                    <img class="img2" src="https://avatars.githubusercontent.com/u/76607616?s=400&u=7d34547eac0b82e2d3d5b6bb709565dd05682229&v=4" alt="Dharun C" style="width:100%">
-
-                </div>
-
-                <div class="member member3">
-
-                    <div class="card card3">
-                        <h1>Hrithik M J</h1>
-                        <h3>Reach us!</h3>
-                        <p>
-                            <a class="github" href="https://github.com/HrithikMJ"  target="__blank"><i class="fab fa-github"></i></a>
-                            <a class="mail" href="mailto:hrithikmj003@gmail.com" target="__blank"><i class="fas fa-paper-plane"></i></a>
-                        </p>
-                    </div>
-                    <img class="img3" src="https://avatars.githubusercontent.com/u/31767239?s=400&u=60cbb0cfc91e69c6e915d41197e12f3bc0f19cb8&v=4" alt="Hrithik MJ" style="width:100%">
-
-                </div>
-
+      <div class="team">
+        <div class="team-members">
+          <div class="member member1">
+            <div class="card card1">
+              <h1>Dharun V S</h1>
+              <h3>Reach us!</h3>
+              <p>
+                <a
+                  class="insta"
+                  herf="https://instagram.com/dharun_sivakumar?igshid=u8rot4jptw8l"
+                  target="__blank"
+                  ><i id="insta" class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="github"
+                  href="https://github.com/dharunvs"
+                  target="__blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  class="mail"
+                  href="mailto:dharunsivakumar002@gmail.com"
+                  target="__blank"
+                  ><i class="fas fa-at"></i
+                ></a>
+              </p>
             </div>
+            <img
+              class="img1"
+              src="https://avatars.githubusercontent.com/u/72387676?s=400&u=ba8e1ee77546c45d47036fb1922995bac5218382&v=4"
+              alt="Dharun VS"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="member member2">
+            <div class="card card2">
+              <h1>Dharun C</h1>
+              <h3>Reach us!</h3>
+              <p>
+                <a
+                  class="insta"
+                  herf="https://instagram.com/dharun_sivakumar?igshid=u8rot4jptw8l"
+                  target="__blank"
+                  ><i id="insta" class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="github"
+                  href="https://github.com/Dharundds"
+                  target="__blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  class="mail"
+                  href="mailto:dharundds@gmail.com"
+                  target="__blank"
+                  ><i class="fas fa-at"></i
+                ></a>
+              </p>
+            </div>
+            <img
+              class="img2"
+              src="https://avatars.githubusercontent.com/u/76607616?s=400&u=7d34547eac0b82e2d3d5b6bb709565dd05682229&v=4"
+              alt="Dharun C"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="member member3">
+            <div class="card card3">
+              <h1>Hrithik M J</h1>
+              <h3>Reach us!</h3>
+              <p>
+                <a
+                  scribe="component:button"
+                  class="insta"
+                  herf="https://instagram.com/dharun_sivakumar?igshid=u8rot4jptw8l"
+                  target="__blank"
+                  ><i id="insta" class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="github"
+                  href="https://github.com/HrithikMJ"
+                  target="__blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  class="mail"
+                  href="mailto:hrithikmj003@gmail.com"
+                  target="__blank"
+                  ><i class="fas fa-at"></i
+                ></a>
+              </p>
+            </div>
+            <img
+              class="img3"
+              src="https://avatars.githubusercontent.com/u/31767239?s=400&u=60cbb0cfc91e69c6e915d41197e12f3bc0f19cb8&v=4"
+              alt="Hrithik MJ"
+              style="width: 100%"
+            />
+          </div>
         </div>
-
-        <div class="contact">
-
-            <div class="main-block">
-                <div class="left-part">
-
-                    <a class="social-link" href="#">
-                        <div class="icon" id="first">
-                            <div>
-                                <svg height="80" width="80">
-                                    <circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle>
-                                </svg>
-                                <i class="fab fa-instagram fa-2x"></i>
-                            </div>
-                            <p class="social-link-text">Instagram</p>
-                        </div>
-                    </a>
-                    <a class="social-link" href="#">
-                        <div class="icon" id="second">
-                            <div>
-                                <svg height="80" width="80">
-                                    <circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle>
-                                </svg>
-                                <i class="fab fa-facebook fa-2x"></i>
-                            </div>
-                            <p class="social-link-text">Facebook</p>
-                        </div>
-                    </a>
-                    <a class="social-link" href="#">
-                        <div class="icon" id ="third">
-                            <div>
-                                <svg height="80" width="80">
-                                    <circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle>
-                                </svg>
-                                <i class="fab fa-twitter fa-2x"></i>
-                            </div>
-                            <p class="social-link-text">Twitter</p>
-                        </div>
-                    </a>
-                    
+      </div>
+      <div class="contact">
+        <div class="main-block">
+          <div class="left-part">
+            <a class="social-link" href="#">
+              <div class="icon" id="first">
+                <div>
+                  <svg height="80" width="80">
+                    <circle
+                      cx="40"
+                      cy="40"
+                      r="35"
+                      stroke="white"
+                      stroke-width="4"
+                      fill="none"
+                    ></circle>
+                  </svg>
+                  <i class="fab fa-instagram fa-2x"></i>
                 </div>
-
-                <div class="popup">
-                    <div id="popup-message">
-                    </div>
-                    <button onclick="okay()">Okay</button>
+                <p class="social-link-text">Instagram</p>
+              </div>
+            </a>
+            <a class="social-link" href="#">
+              <div class="icon" id="second">
+                <div>
+                  <svg height="80" width="80">
+                    <circle
+                      cx="40"
+                      cy="40"
+                      r="35"
+                      stroke="white"
+                      stroke-width="4"
+                      fill="none"
+                    ></circle>
+                  </svg>
+                  <i class="fab fa-facebook fa-2x"></i>
                 </div>
+                <p class="social-link-text">Facebook</p>
+              </div>
+            </a>
+            <a class="social-link" href="#">
+              <div class="icon" id="third">
+                <div>
+                  <svg height="80" width="80">
+                    <circle
+                      cx="40"
+                      cy="40"
+                      r="35"
+                      stroke="white"
+                      stroke-width="4"
+                      fill="none"
+                    ></circle>
+                  </svg>
+                  <i class="fab fa-twitter fa-2x"></i>
+                </div>
+                <p class="social-link-text">Twitter</p>
+              </div>
+            </a>
+          </div>
 
-                <form id="myForm">
-                    <h1>Contact Us</h1>
-                    <div class="info">
-                        <input name="Full Name" placeholder="Full name" />
-                        <input name="Email" placeholder="Email" />
-                        <input name="Phone No" placeholder="Phone number" />
-                        <textarea rows="4" name="Message" placeholder="Enter your message"></textarea>
-                    </div>
-                    <button type="button" onclick="Validate()" href="/">Submit</button>
-                    <div class="submitted">Form submitted successfully</div>
-                </form>
+          <div class="popup">
+            <div id="popup-message"></div>
+            <button onclick="okay()">Okay</button>
+          </div>
+
+          <form id="myForm">
+            <h1>Contact Us</h1>
+            <div class="info">
+              <input name="Full Name" placeholder="Full name" />
+              <input name="Email" placeholder="Email" />
+              <input name="Phone No" placeholder="Phone number" />
+              <textarea
+                rows="4"
+                name="Message"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+            <button type="button" onclick="Validate()" href="/">Submit</button>
+            <div class="submitted">Form submitted successfully</div>
+          </form>
+        </div>
+      </div>
+
+      <div class="shop">
+        <div class="shop-content">
+          <div class="cart"><i class="fas fa-shopping-cart"></i></div>
+          <section class="shop-section">
+            <div class="new-arrival">
+              <h1>New Arrival</h1>
+              <div class="new-arrival-products">
+                <div class="product">
+                  <div class="img-container i1">
+                    <img src="./images/pic5.png" alt="" />
+                  </div>
+                  <div class="product-bottom">
+                    <h2 class="name">Polar Skate Co Devil T Shirt</h2>
+                    <button class="add-to-cart">Add to cart</button>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="img-container i2">
+                    <img src="./images/pic2.png" alt="" />
+                  </div>
+                  <div class="product-bottom">
+                    <h2 class="name">Polar Skate Co Devil T Shirt</h2>
+                    <button class="add-to-cart">Add to cart</button>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="img-container i3">
+                    <img src="./images/pic3.png" alt="" />
+                  </div>
+                  <div class="product-bottom">
+                    <h2 class="name">Polar Skate Co Devil T Shirt</h2>
+                    <button class="add-to-cart">Add to cart</button>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="img-container i4">
+                    <img src="./images/pic4.png" alt="" />
+                  </div>
+                  <div class="product-bottom">
+                    <h2 class="name">Polar Skate Co Devil T Shirt</h2>
+                    <button class="add-to-cart">Add to cart</button>
+                  </div>
+                </div>
+              </div>
             </div>
 
-        </div>
+            <div class="products-banner">
+              <div class="button-container">
+                <button class="left-button banner-nav">PREV</button>
+                <button class="right-button banner-nav">NEXT</button>
+              </div>
 
-        <div class="shop">
-            <div class="shop-content">
-                <div class="cart"><i class="fas fa-shopping-cart"></i></div>
-                <section class="shop-section">
-                    <div class="new-arrival">
-                        <h1>New Arrival</h1>
-                        <div class="new-arrival-products">
-                            <div class="product">
-                                <div class="img-container i1">
-                                    <img src="./images/pic5.png" alt="">
-                                </div>
-                                <div class="product-bottom">
-                                    <h2 class="name">Polar Skate Co Devil T Shirt</h2>
-                                    <button class="add-to-cart">Add to cart</button>
-                                </div>
-                            </div>
-                            <div class="product">
-                                <div class="img-container i2">
-                                    <img src="./images/pic2.png" alt="">
-                                </div>
-                                <div class="product-bottom">
-                                    <h2 class="name">Polar Skate Co Devil T Shirt</h2>
-                                    <button class="add-to-cart">Add to cart</button>
-                                </div>
-                            </div>
-                            <div class="product">
-                                <div class="img-container i3">
-                                    <img src="./images/pic3.png" alt="">
-                                </div>
-                                <div class="product-bottom">
-                                    <h2 class="name">Polar Skate Co Devil T Shirt</h2>
-                                    <button class="add-to-cart">Add to cart</button>
-                                </div>
-                            </div>
-                            <div class="product">
-                                <div class="img-container i4">
-                                    <img src="./images/pic4.png" alt="">
-                                </div>
-                                <div class="product-bottom">
-                                    <h2 class="name">Polar Skate Co Devil T Shirt</h2>
-                                    <button class="add-to-cart">Add to cart</button>
-                                </div>
-                            </div>
-                        </div>
+              <div class="banner-gallery">
+                <div class="banner-display">
+                  <div class="banner-image-container">
+                    <img src="./images/pic6.png" alt="" />
+                  </div>
+                  <div class="right-part">
+                    <div class="banner-description">
+                      <h3 class="banner-title">Lorem ipsum dolor sit amet.</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Harum omnis doloremque vitae repellendus rerum hic,
+                        illum eum deleniti itaque iusto corrupti ea nisi ad sint
+                        possimus autem quod perspiciatis enim!
+                      </p>
                     </div>
+<<<<<<< HEAD
 
                     <div class="products-banner">
                         <!-- <div class="button-container">
@@ -371,22 +476,33 @@
                             <button class="thumb-container" onclick="bannerAnimate('bd4')"><img src="./images/pic9.png" alt=""></button>
                         </div>
                         
+=======
+                    <div class="banner-buttons">
+                      <button>Add to cart</button><button>100$</button>
+>>>>>>> 8e53b114fa7bdf5dc6de403c1c96c1fe0bacb251
                     </div>
-                </section>
+                  </div>
+                </div>
+              </div>
             </div>
+          </section>
         </div>
-
+      </div>
     </div>
 
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./scripts/app.js"></script>
     <script
-    src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
     <script src="./scripts/team.js"></script>
     <script src="./scripts/shop.js"></script>
     <script src="./scripts/contact.js"></script>
-</body>
+  </body>
 </html>

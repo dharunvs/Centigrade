@@ -1,4 +1,4 @@
-.landing-content {
+/* .landing-content {
   height: 90vh;
   width: 100%;
   position: absolute;
@@ -18,4 +18,83 @@
 
 .landing-content::-webkit-scrollbar-thumb {
   background-color: rgba(240, 248, 255, 0.5);
+}
+ */
+
+.landing {
+  background-size: cover;
+  height: 100vh;
+}
+.landing .center {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  user-select: none;
+}
+.center h1 {
+  color: white;
+  font-size: 60px;
+  width: 900px;
+  font-weight: bold;
+  text-align: center;
+}
+.center h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 0.5px;
+  width: 885px;
+  text-align: center;
+}
+
+.center h3 {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 0.5px;
+  width: 885px;
+  text-align: center;
+}
+
+.center h4 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 0.5px;
+  width: 885px;
+  text-align: center;
+}
+
+.center h5 {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 0.5px;
+  width: 885px;
+  text-align: center;
+}
+
+.center .buttons {
+  margin: 35px 370px;
+}
+.buttons button {
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffb3b3;
+  background: red;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #cc0000;
+  border-radius: 25px;
+  transition: 0.4s;
+}
+.buttons .btn2 {
+  margin-left: 25px;
+}
+.buttons button:hover {
+  background: #cc0000;
 }
