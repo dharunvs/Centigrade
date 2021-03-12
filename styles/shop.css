@@ -8,9 +8,11 @@
 
 .shop-section {
   width: calc(80% - 15px);
-  margin: auto;
+  height: 220%;
+  margin: 8vh auto 10vh auto;
   padding: 0%;
   background-color: rgba(240, 248, 255, 0.281);
+  overflow: hidden;
 }
 
 .shop-content::-webkit-scrollbar {
@@ -51,13 +53,22 @@
 }
 
 .new-arrival h1 {
-  margin: 20px 0;
+  width: 90%;
+  margin: 20px auto;
   padding: 5px;
   font-size: 2rem;
   text-align: center;
   color: rgb(0, 0, 0);
+  background-color: rgba(240, 248, 255, 0.356);
 }
 
+.products-banner h1 {
+  font-size: 2rem;
+  width: 90%;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  background-color: rgba(240, 248, 255, 0.356);
+}
 .new-arrival-products {
   width: 95%;
   margin: auto;
@@ -141,6 +152,10 @@
   justify-content: space-between;
 }
 
+.banner-gallery {
+  position: relative;
+  height: 60vh;
+}
 .banner-nav {
   margin: 10px 40px;
   width: 100px;
@@ -148,6 +163,7 @@
   border: none;
   color: darkblue;
   letter-spacing: 2px;
+  outline: none;
   background-color: rgba(255, 255, 255, 0.329);
   transition: all 200ms ease-in-out;
 }
@@ -158,6 +174,8 @@
 .banner-display {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 15vh;
+  position: absolute;
 }
 
 .banner-display .right-part {
@@ -175,4 +193,146 @@
   height: 110%;
   width: auto;
   margin-left: 100px;
+}
+
+.banner-buttons {
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+}
+
+.banner-buttons button,
+.banner-buttons .banner-price {
+  width: 49%;
+  background-color: rgba(255, 255, 255, 0.329);
+  padding: 5px;
+  border: none;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  outline: none;
+  transition: all 200ms ease-in-out;
+}
+
+.banner-buttons button:hover {
+  background-color: aliceblue;
+}
+.gallery-thumbnail {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.thumb-container {
+  width: 22%;
+  height: 30vh;
+  background-color: rgba(240, 248, 255, 0.459);
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.226);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.thumb-container:hover {
+  background-color: rgba(240, 248, 255, 0.1);
+}
+
+.thumb-container img {
+  height: 80%;
+  width: auto;
+}
+
+.colors {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  transform: translateY(50px);
+  margin-bottom: 10px;
+}
+
+.radio-btn {
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colors .blue {
+  border: 3px solid blue;
+}
+
+.colors .green {
+  border: 3px solid green;
+}
+
+.colors .red {
+  border: 3px solid red;
+}
+
+.colors .yellow {
+  border: 3px solid yellow;
+}
+
+.radio-btn .checkmark {
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+  position: relative;
+  margin: auto;
+  display: none;
+  transition: all 200ms ease-in-out;
+}
+
+.radio-btn .blue {
+  background-color: blue;
+}
+
+.radio-btn .green {
+  background-color: green;
+}
+
+.radio-btn .red {
+  background-color: red;
+}
+
+.radio-btn .yellow {
+  background-color: yellow;
+}
+
+.radio-btn input {
+  display: none;
+}
+
+.radio-btn input:checked + .checkmark {
+  display: inline-block;
+  transition: all 200ms ease-in-out;
+}
+
+.bd1 {
+  transform: translateX(0%);
+}
+.bd2 {
+  transform: translateX(100%);
+}
+.bd3 {
+  transform: translateX(200%);
+}
+.bd4 {
+  transform: translateX(300%);
+}
+
+.banner-description {
+  width: 90%;
+}
+
+.banner-description h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
