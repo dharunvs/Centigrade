@@ -24,6 +24,32 @@
   width: 100%;
 }
 
+.cart {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(240, 248, 255, 0.363);
+  position: fixed;
+  top: 50%;
+  right: 3%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+}
+
+.cart:hover {
+  background-color: aliceblue;
+}
+
+.cart i {
+  padding: 5px;
+  margin-top: 3px;
+  margin-right: 7px;
+  font-size: 1.2rem;
+}
+
 .new-arrival h1 {
   margin: 20px 0;
   padding: 5px;
@@ -33,13 +59,13 @@
 }
 
 .new-arrival-products {
-  width: 90%;
+  width: 95%;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
 .product {
-  width: 23%;
+  width: 24%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -51,6 +77,7 @@
 .product .img-container {
   overflow: hidden;
   width: 100%;
+  margin-top: 5px;
   height: 35vh;
   display: flex;
   align-items: center;
@@ -58,12 +85,12 @@
 }
 .product .img-container img {
   margin-top: 15px;
-  width: 100%;
+  width: 95%;
   transition: all 400ms ease-in-out;
 }
 
 .product:hover {
-  background-color: rgba(240, 248, 255, 0.548);
+  background-color: rgba(240, 248, 255, 0.192);
 }
 
 .product:hover .img-container img {
@@ -93,6 +120,7 @@
   border: none;
   font-size: 1.2rem;
   margin-top: 20px;
+  margin-bottom: 10px;
   outline: none;
   transition: all 200ms ease-in-out;
 }
