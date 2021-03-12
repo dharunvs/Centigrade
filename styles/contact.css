@@ -13,20 +13,6 @@ form {
   box-shadow: 0 2px 5px #f5f5f5;
   background: #f5f5f5;
 }
-.fa-envelope,
-.fa-at,
-.fa-mail-bulk {
-  margin: 25px 10px 0;
-  font-size: 72px;
-  color: #fff;
-}
-.fa-envelope {
-  transform: rotate(-20deg);
-}
-.fa-at,
-.fa-mail-bulk {
-  transform: rotate(10deg);
-}
 
 form h1 {
   color: #0098c7;
@@ -92,10 +78,11 @@ form button:hover {
 
 .left-part .icon p {
   opacity: 0;
-  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
 }
 
 .left-part .social-link:hover .icon {
+  background: #1877f2;
   margin-left: 10px;
 }
 
@@ -104,16 +91,24 @@ form button:hover {
   transform: translateX(25px);
 }
 
-.main-block .social-link:hover #first {
-  background-color: #ff0062;
+.main-block .social-link:hover .icon#second {
+  background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 100%);
 }
 
-.main-block .social-link:hover #second {
-  background-color: #003bdd;
+.main-block .social-link:hover .icon#first {
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
 }
 
-.main-block .social-link:hover #third {
-  background-color: #00aeff;
+.main-block .social-link:hover .icon#third {
+  background-image: linear-gradient(135deg, #abdcff 10%, #0396ff 100%);
 }
 
 .main-block .icon i {
@@ -126,7 +121,7 @@ form button:hover {
 
 .icon p {
   text-decoration: none;
-  color: #00000098;
+  color: #0059ff;
   font-weight: bold;
 }
 

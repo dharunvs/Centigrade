@@ -68,10 +68,9 @@
   border: 1px solid #cc0000;
   border-radius: 25px;
   transition: 0.4s;
+
 }
-.buttons .btn2 {
-  margin-left: 25px;
-}
+
 .buttons button:hover {
   background: #cc0000;
 }
