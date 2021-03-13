@@ -78,13 +78,13 @@ nav {
   width: 40%;
   margin: auto;
   display: flex;
-  align-items: right;
-  justify-content: right;
+  align-items: center;
+  justify-content: center;
   list-style: none;
   cursor: pointer;
 }
 .nav-links{
-  margin-left: 55%;
+  margin-left: 60%;
 }
 
 #shop
@@ -107,7 +107,7 @@ nav {
 }
 
 .nav-link:hover {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 

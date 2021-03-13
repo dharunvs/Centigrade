@@ -21,7 +21,7 @@ bannerAnimate = (page) => {
 let currentBannerPage = 0
 pnButtonAnimate = (type) => {
   var dis = 0;
-  
+
   if (type == 'prev'){
     currentBannerPage += 1
   };
@@ -36,4 +36,4 @@ pnButtonAnimate = (type) => {
     dis = 300
   }
   tl.to(".banner-gallery", { x: "" + dis + "%", duration: 1 });
-} 
+}
