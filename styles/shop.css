@@ -242,6 +242,7 @@
 .banner-buttons button:hover {
   background-color: aliceblue;
 }
+
 .gallery-thumbnail {
   width: 90%;
   margin: auto;
@@ -289,19 +290,19 @@
 }
 
 .colors .blue {
-  border: 3px solid blue;
+  border: 5px solid blue;
 }
 
 .colors .green {
-  border: 3px solid green;
+  border: 5px solid green;
 }
 
 .colors .red {
-  border: 3px solid red;
+  border: 5px solid red;
 }
 
 .colors .yellow {
-  border: 3px solid yellow;
+  border: 5px solid yellow;
 }
 
 .radio-btn .checkmark {
