@@ -10,8 +10,8 @@
 }
 
 .member {
-  width: 300px;
-  height: 300px;
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
   overflow: hidden;
   margin: auto;
@@ -37,7 +37,7 @@
   color: rgb(109, 0, 76);
 }
 .fa-github,
-.fa-at{
+.fa-at {
   font-size: 1.8rem;
   margin: 10px 5px;
   color: black;
@@ -54,25 +54,15 @@
   transform: translateY(-100%);
 }
 
-.member1:hover {
-  width: 400px;
-  height: 400px;
-}
-.member2:hover {
-  width: 400px;
-  height: 400px;
-}
+.member1:hover,
+.member2:hover,
 .member3:hover {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
 
-.member1:hover .card1 {
-  transform: translateY(0%);
-}
-.member2:hover .card2 {
-  transform: translateY(0%);
-}
+.member1:hover .card1,
+.member2:hover .card2,
 .member3:hover .card3 {
   transform: translateY(0%);
 }

@@ -18,22 +18,52 @@ bannerAnimate = (page) => {
   tl.to(".banner-gallery", { x: "" + distance + "%", duration: 1 });
 };
 
-let currentBannerPage = 0
-pnButtonAnimate = (type) => {
-  var dis = 0;
-
-  if (type == 'prev'){
-    currentBannerPage += 1
-  };
-  if (type == 'next'){
-    currentBannerPage -=1
-  };
-
-
-  dis = 100*currentBannerPage
-
-  if (dis > 300){
-    dis = 300
-  }
-  tl.to(".banner-gallery", { x: "" + dis + "%", duration: 1 });
+cartAnimate = () => {
+  let bill = document.getElementsByClassName('bill');
+  bill[0].classList.toggle('bill-active');
 }
+
+let items = []
+getItem = (n, i, p) => {
+  items.push([n, i, p])
+
+  let display = document.getElementById('cart-mini-display');
+  
+  // console.log(items[i][0], items[i][1], items[i][2])
+  let div = document.createElement('div')
+  div.classList.add('item')
+  let image_container = document.createElement('div')
+  image_container.classList.add('cart-image-container')
+  let image = document.createElement('img')
+  image.src = i
+
+  let text_div = document.createElement('div')
+  text_div.classList.add('cart-item-text')
+  let name = document.createElement('h3')
+  let price = document.createElement('p')
+  name.appendChild(document.createTextNode(n))
+  price.appendChild(document.createTextNode(p))
+  text_div.appendChild(name)
+  text_div.appendChild(price)
+  image_container.appendChild(image)
+
+  div.appendChild(image_container)
+  div.appendChild(text_div)
+  display.appendChild(div)
+
+}
+
+String.prototype.format = function() {
+  a = this;
+  for (k in arguments) {
+    a = a.replace("{" + k + "}", arguments[k])
+  }
+  return a
+}
+
+displayCart = () => {
+  
+  
+  
+}
+

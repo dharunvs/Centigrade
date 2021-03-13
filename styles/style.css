@@ -13,9 +13,7 @@ html {
   box-sizing: border-box;
   font-family: Poppins;
 }
-#logo:hover{
 
-}
 body {
   height: 100vh;
   width: 100%;
@@ -43,11 +41,11 @@ body {
   transform: translateX(100%);
 }
 .contact {
-  background-image: linear-gradient( 135deg, #81FFEF 10%, #F067B4 100%);
+  background-image: linear-gradient(135deg, #81ffef 10%, #f067b4 100%);
   transform: translateX(200%);
 }
 .shop {
-  background-image: linear-gradient( 135deg, #FF7AF5 10%, #513162 100%);
+  background-image: linear-gradient(135deg, #ff7af5 10%, #513162 100%);
   transform: translateX(300%);
 }
 header {
@@ -83,12 +81,11 @@ nav {
   list-style: none;
   cursor: pointer;
 }
-.nav-links{
+.nav-links {
   margin-left: 60%;
 }
 
-#shop
-{
+#shop {
   width: 70%;
   margin: auto;
   display: flex;
@@ -176,12 +173,10 @@ nav {
 .banner {
   width: 100%;
 }
-.logo{
+.logo {
   font-size: 1.3rem;
-
-
 }
-.fill-right:hover{
+.fill-right:hover {
   padding: 10px 20px;
   font-weight: bold;
 
@@ -190,7 +185,6 @@ nav {
     rgb(17, 117, 231, 0.5),
     rgba(136, 0, 133, 0.6)
   );
-
 
   color: white;
   transition-duration: 500ms;
