@@ -184,10 +184,8 @@ nav {
 .fill-right:hover {
   padding: 10px 20px;
   font-weight: bold;
-
-  background-image: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
-
-
+  background-color: #74EBD5;
+  background-image: linear-gradient(315deg, #74EBD5 0%, #9FACE6 50%, #c34fd5 100%);
   color: white;
   transition-duration: 500ms;
 
