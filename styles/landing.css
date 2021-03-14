@@ -17,27 +17,7 @@
 .landing-content::-webkit-scrollbar-thumb {
   background-color: rgba(240, 248, 255, 0.5);
 }
-/*
-.landing-banner {
-  width: 90%;
-  height: 80vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  background: linear-gradient(
-      to top,
-      rgb(17, 117, 231, 0.5),
-      rgba(136, 0, 133, 0.6)
-    ),
-    url("../images/Banner1.jpg") center;
-  background-size: cover;
-}
-*/
+
 .landing-banner-content {
   align-items: center;
   display: flex;

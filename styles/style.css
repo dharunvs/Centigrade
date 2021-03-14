@@ -185,11 +185,8 @@ nav {
   padding: 10px 20px;
   font-weight: bold;
 
-  background: linear-gradient(
-    to top,
-    rgb(17, 117, 231, 0.5),
-    rgba(136, 0, 133, 0.6)
-  );
+  background-image: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+
 
   color: white;
   transition-duration: 500ms;
