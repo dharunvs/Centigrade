@@ -534,7 +534,7 @@
 
 .added.show {
   visibility: visible;
-  animation: anim2 1000ms;
+  animation: anim2 5000ms;
 }
 
 @keyframes anim2 {
