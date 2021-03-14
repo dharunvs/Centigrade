@@ -40,15 +40,27 @@ getItem = (n, i, p) => {
   text_div.classList.add("cart-item-text");
   let name = document.createElement("h3");
   let price = document.createElement("p");
+
+  let removeBtn = document.createElement('button')
+  removeBtn.innerText = "Remove"
+  removeBtn.classList.add("remove-button")
+  
+
   name.appendChild(document.createTextNode(n));
   price.appendChild(document.createTextNode(p));
   text_div.appendChild(name);
   text_div.appendChild(price);
+  text_div.appendChild(removeBtn)
   image_container.appendChild(image);
 
   div.appendChild(image_container);
   div.appendChild(text_div);
   display.appendChild(div);
+
+  removeBtn.addEventListener('click', () => {
+    console.log(i)
+    display.removeChild(div)
+  })
 };
 
 String.prototype.format = function () {
@@ -58,5 +70,9 @@ String.prototype.format = function () {
   }
   return a;
 };
+
+remove = () => {
+  console.log('Removed')
+}
 
 displayCart = () => {};

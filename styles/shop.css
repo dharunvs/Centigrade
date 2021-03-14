@@ -63,7 +63,7 @@
 }
 
 .featured {
-  transform: translateY(15vh);
+  transform: translateY(5vh);
 }
 .featured h1 {
   font-size: 2rem;
@@ -255,7 +255,7 @@
 }
 .thumb-container {
   width: 22%;
-  height: 30vh;
+  height: 20vh;
   background-color: rgba(240, 248, 255, 0.459);
   outline: none;
   border: 2px solid rgba(0, 0, 0, 0.226);
@@ -380,14 +380,25 @@
   transition: visibility 0ms, opacity 200ms linear;
 }
 
+.bill h2 {
+  padding: 5px;
+  margin-left: 10px;
+}
+
 .bill-active {
   visibility: visible;
   opacity: 1;
 }
 
+.items-display {
+  display: flex;
+  justify-content: space-between;
+}
+
 #cart-mini-display {
   height: 73vh;
   width: 65%;
+  padding-bottom: 20px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -400,9 +411,30 @@
   background-color: rgba(128, 128, 128, 0.555);
 }
 
-.total {
-  height: 20vh;
-  margin: auto;
+#total {
+  height: 73vh;
+  width: 34%;
+  padding: 10px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#price-display {
+  height: 50%;
+  width: 100%;
+  background-color: rebeccapurple;
+}
+
+.place-order {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: black;
+  background-color: aliceblue;
+  border: none;
+  outline: none;
 }
 
 .item {
@@ -426,4 +458,14 @@
 
 .cart-item-text {
   margin-left: 20px;
+}
+
+.remove-button {
+  width: 100px;
+  padding: 5px 10px;
+  background-color: aliceblue;
+  color: black;
+  font-size: 1em;
+  border: none;
+  outline: none;
 }
