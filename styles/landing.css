@@ -4,6 +4,7 @@
   position: absolute;
   top: 10vh;
   overflow-y: scroll;
+  padding-bottom: 30vh;
 }
 
 .landing-section {
@@ -22,7 +23,16 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-top: 10%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    343deg,
+    rgba(255, 255, 255, 0) 64%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  width: 50%;
+  margin: auto;
+  margin-top: 10vh;
+  padding-top: 20px;
 }
 
 .landing-banner-content h1,
@@ -69,4 +79,86 @@
 }
 .landing-banner h5 {
   font-size: 1.8rem;
+}
+
+.landing-teams {
+  margin-top: 10vh;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+  margin-top: 10vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    343deg,
+    rgba(255, 255, 255, 0) 64%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  padding-top: 10vh;
+}
+
+.landing-teams-container {
+  display: flex;
+}
+
+.lteams-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.lt2 {
+  margin-left: -100px;
+}
+.lt3 {
+  margin-left: -100px;
+}
+
+.landing-teams-description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+  height: 20vh;
+  width: 20%;
+  align-items: center;
+}
+/* .landing-teams-description button {
+  width: 90%;
+  padding: 10px;
+  color: black;
+  margin-top: 10px;
+  background-color: rgba(240, 248, 255, 0.308);
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+} */
+
+.landing-teams-description button {
+  width: 200px;
+  padding: 10px;
+  margin-top: 10px;
+  outline: none;
+  border-radius: 20px;
+  background-color: aliceblue;
+  border: 2px solid rgba(240, 248, 255, 0);
+  transition: all 200ms ease-in-out;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.landing-teams-description h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.301);
+}
+
+.landing-teams-description button:hover {
+  border: 2px solid aliceblue;
+  background-color: rgba(240, 248, 255, 0);
+  color: aliceblue;
 }
