@@ -380,9 +380,15 @@
   transition: visibility 0ms, opacity 200ms linear;
 }
 
+.bill #hr1 {
+  border: 1px solid rgba(128, 128, 128, 0.336);
+  width: 95%;
+  margin: auto;
+}
+
 .bill h2 {
   padding: 5px;
-  margin-left: 10px;
+  text-align: center;
 }
 
 .bill-active {
@@ -396,8 +402,10 @@
 }
 
 #cart-mini-display {
-  height: 73vh;
-  width: 65%;
+  height: 70vh;
+  width: 62%;
+  margin-top: 2vh;
+  margin-left: 3%;
   padding-bottom: 20px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -415,7 +423,6 @@
   height: 73vh;
   width: 34%;
   padding: 10px;
-  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -424,7 +431,11 @@
 #price-display {
   height: 50%;
   width: 100%;
-  background-color: rebeccapurple;
+}
+
+#price-display h3 {
+  margin: 10px 0;
+  margin-bottom: 20px;
 }
 
 .place-order {
@@ -458,6 +469,16 @@
 
 .cart-item-text {
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cart-item-text h3 {
+  font-weight: normal;
+}
+.cart-item-text p {
+  font-weight: bold;
 }
 
 .remove-button {
@@ -468,4 +489,32 @@
   font-size: 1em;
   border: none;
   outline: none;
+}
+
+#price-insert {
+  display: flex;
+  margin-top: 25px;
+  height: 80%;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+}
+
+#price-insert div {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+#price-insert div span {
+  text-align: center;
+}
+
+#hr2 {
+  border: 1px solid rgba(128, 128, 128, 0.336);
+  width: 90%;
+}
+
+#spl {
+  font-size: 1.2rem;
+  font-weight: bold;
 }

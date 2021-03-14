@@ -44,10 +44,10 @@ getItem = (n, i, p) => {
   let removeBtn = document.createElement('button')
   removeBtn.innerText = "Remove"
   removeBtn.classList.add("remove-button")
-  
+
 
   name.appendChild(document.createTextNode(n));
-  price.appendChild(document.createTextNode(p));
+  price.appendChild(document.createTextNode('₹'+p));
   text_div.appendChild(name);
   text_div.appendChild(price);
   text_div.appendChild(removeBtn)
@@ -58,9 +58,16 @@ getItem = (n, i, p) => {
   display.appendChild(div);
 
   removeBtn.addEventListener('click', () => {
-    console.log(i)
     display.removeChild(div)
+    items.pop([n, i, p])
+    priceUpdate()
+
+    
+    
   })
+
+  priceUpdate()
+
 };
 
 String.prototype.format = function () {
@@ -71,8 +78,25 @@ String.prototype.format = function () {
   return a;
 };
 
-remove = () => {
-  console.log('Removed')
-}
+priceUpdate = () => {
+  let price = document.getElementById('insert-price')
+  let discount = document.getElementById('insert-discount')
+  let charges = document.getElementById('insert-dcharges')
+  let total = document.getElementById('insert-total')
 
-displayCart = () => {};
+  var price_value = 0
+  for (i in items){
+    price_value += items[i][2]
+  }
+  var discount_value = 20
+  var charges_value = 'FREE'
+
+  var total_value = price_value - (price_value*20/100)
+
+  price.innerText = "₹"+price_value+""
+  discount.innerText = ""+discount_value+"%"
+  charges.innerText = ""+charges_value+""
+  total.innerText = "₹"+total_value+""
+
+
+}
