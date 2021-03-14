@@ -93,10 +93,17 @@ priceUpdate = () => {
 
   var total_value = price_value - (price_value*20/100)
 
+  
+
   price.innerText = "₹"+price_value+""
   discount.innerText = ""+discount_value+"%"
   charges.innerText = ""+charges_value+""
   total.innerText = "₹"+total_value+""
 
-
+  if (items.length == 0){
+    price.innerText = ''
+    discount.innerText = ''
+    charges.innerText = ''
+    total.innerText = ''
+  }
 }
