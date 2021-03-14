@@ -386,7 +386,8 @@
 }
 
 #cart-mini-display {
-  height: 53vh;
+  height: 73vh;
+  width: 65%;
   overflow-y: scroll;
   overflow-x: hidden;
 }

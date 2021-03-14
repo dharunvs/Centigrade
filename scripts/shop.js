@@ -1,6 +1,5 @@
 let bannerPages = ["bd1", , "bd2", "bd3", "bd4"];
 
-
 bannerAnimate = (page) => {
   var distance = 0;
   if (page == "bd1") {
@@ -19,51 +18,45 @@ bannerAnimate = (page) => {
 };
 
 cartAnimate = () => {
-  let bill = document.getElementsByClassName('bill');
-  bill[0].classList.toggle('bill-active');
-}
+  let bill = document.getElementsByClassName("bill");
+  bill[0].classList.toggle("bill-active");
+};
 
-let items = []
+let items = [];
 getItem = (n, i, p) => {
-  items.push([n, i, p])
+  items.push([n, i, p]);
 
-  let display = document.getElementById('cart-mini-display');
-  
+  let display = document.getElementById("cart-mini-display");
+
   // console.log(items[i][0], items[i][1], items[i][2])
-  let div = document.createElement('div')
-  div.classList.add('item')
-  let image_container = document.createElement('div')
-  image_container.classList.add('cart-image-container')
-  let image = document.createElement('img')
-  image.src = i
+  let div = document.createElement("div");
+  div.classList.add("item");
+  let image_container = document.createElement("div");
+  image_container.classList.add("cart-image-container");
+  let image = document.createElement("img");
+  image.src = i;
 
-  let text_div = document.createElement('div')
-  text_div.classList.add('cart-item-text')
-  let name = document.createElement('h3')
-  let price = document.createElement('p')
-  name.appendChild(document.createTextNode(n))
-  price.appendChild(document.createTextNode(p))
-  text_div.appendChild(name)
-  text_div.appendChild(price)
-  image_container.appendChild(image)
+  let text_div = document.createElement("div");
+  text_div.classList.add("cart-item-text");
+  let name = document.createElement("h3");
+  let price = document.createElement("p");
+  name.appendChild(document.createTextNode(n));
+  price.appendChild(document.createTextNode(p));
+  text_div.appendChild(name);
+  text_div.appendChild(price);
+  image_container.appendChild(image);
 
-  div.appendChild(image_container)
-  div.appendChild(text_div)
-  display.appendChild(div)
+  div.appendChild(image_container);
+  div.appendChild(text_div);
+  display.appendChild(div);
+};
 
-}
-
-String.prototype.format = function() {
+String.prototype.format = function () {
   a = this;
   for (k in arguments) {
-    a = a.replace("{" + k + "}", arguments[k])
+    a = a.replace("{" + k + "}", arguments[k]);
   }
-  return a
-}
+  return a;
+};
 
-displayCart = () => {
-  
-  
-  
-}
-
+displayCart = () => {};
