@@ -69,9 +69,6 @@ successAnimation = () => {
     setTimeout(() => {
         submit.classList.remove("show");
       }, 3000);
-
-
-
 }
 
 errorAnimation = () => {

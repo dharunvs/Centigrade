@@ -67,6 +67,7 @@ getItem = (n, i, p) => {
   })
 
   priceUpdate()
+  addedAnimation()
 
 };
 
@@ -106,4 +107,12 @@ priceUpdate = () => {
     charges.innerText = ''
     total.innerText = ''
   }
+}
+
+addedAnimation = () => {
+  const submit = document.querySelector(".added");
+  submit.classList.add("show")
+  setTimeout(() => {
+      submit.classList.remove("show");
+    }, 2000);
 }

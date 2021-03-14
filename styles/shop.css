@@ -518,3 +518,32 @@
   font-size: 1.2rem;
   font-weight: bold;
 }
+
+.added {
+  background-color: rgb(255, 0, 242);
+  color: #000000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  z-index: 1;
+  transform: translate(-50%);
+  visibility: hidden;
+}
+
+.added.show {
+  visibility: visible;
+  animation: anim2 1000ms;
+}
+
+@keyframes anim2 {
+  from {
+    bottom: 60px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
