@@ -22,15 +22,15 @@ pageAnimate = (page) => {
   }
   if (page == "team") {
     currentPage = "team";
-    distance = -100;
+    distance = 100;
   }
   if (page == "contact") {
     currentPage = "contact";
-    distance = -200;
+    distance = 200;
   }
   if (page == "shop") {
     currentPage = "shop";
-    distance = -300;
+    distance = -100;
   }
   tl.to(".pages", { x: "" + distance + "%", duration: 0.5 });
 
