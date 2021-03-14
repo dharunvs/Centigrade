@@ -1,24 +1,30 @@
-# ![Centigrade](/images/logo.gif)
+# ![Centigrade](/images/2.gif)
 
-
-
-Team project for Shasun's Hackathon by [Dharun V S](https://github.com/dharunvs) , [Dharun C](https://github.com/Dharundds) , [Hrihik M J](https://github.com/HrithikMJ/).
+Team project for Shasun's Hackathon by [Dharun V S](https://github.com/dharunvs) , [Dharun C](https://github.com/Dharundds) , [Hrithik M J](https://github.com/HrithikMJ/).
 
 
 
 
-## about
+## About
 
- *Centigrade is a basic web e-commerce application cum landing page.
+   *[SHOPiT](/images/run.gif) is a e-commerce web application .
 
- *It is mainly used to help people who want to sell their product and have thei details in their same website
- 
-
-## Detailed-Description
-
-### teams
+   *It is built mainly with HTML5 , CSS3 and javaScript.
 
 
-## visit
 
- *click here to visit our website.
+
+
+
+## Visit
+
+  *click [here](https://Centigrade.hrithik69.repl.co/) to visit our website.
+
+
+
+
+## Acknowledgements
+
+  *[W3 School]( https://www.w3schools.com/)
+
+  *[W3 Docs](https://www.w3docs.com/)
