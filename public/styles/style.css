@@ -223,7 +223,7 @@ nav {
 	}
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 570px) {
   body{
     font-size: 1rem;
   }
@@ -233,12 +233,14 @@ nav {
     background-image: none;
     color: black;
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 1.1em;
 
   }
   #shop {
     padding: 8px 16px ;
     width: 95%;
+    height: 5%;
+    margin-left: 15px;
   }
   .logo {
     font-size: 0.9rem;
@@ -246,9 +248,7 @@ nav {
   .nav-links,
   #team,
   #contact {
-  width: 200%;
-
-  margin-left: 0%;
-}
+  width: 100%;
+  margin-right: 10px;
 
 }

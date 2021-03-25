@@ -72,6 +72,9 @@ img {
   width: 100%;
 }
 @media only screen and (max-width: 480px) {
+   body{
+     overflow: hidden;
+   }
   .team-members {
     width: 50%;
     left:20%;
@@ -106,3 +109,4 @@ img {
 }
 
 }
+
