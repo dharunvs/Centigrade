@@ -22,10 +22,14 @@ body {
 .contact {
   background-image: linear-gradient(135deg, #81ffef 10%, #f067b4 100%);
   transform: translateX(-200%);
+  background-size: 150% 150%;
+  -webkit-animation: move 3s ease-in-out infinite;
 }
 .team {
   background-image: linear-gradient(315deg, #fbda61 0%, #ff5acd 100%);
   transform: translateX(-100%);
+  background-size: 300% 300%;
+  -webkit-animation: move 3s ease-in-out infinite;
 }
 .landing {
   /* background-image: linear-gradient(135deg, #abdcff 10%, #0396ff 100%); */
@@ -36,15 +40,15 @@ body {
   );
   background-image: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
   transform: translateX(0%);
+  background-size: 150% 150%;
+  -webkit-animation: move 3s ease-in-out infinite;
 }
 
 .shop {
-  background-image: linear-gradient(135deg, #ff7af5 10%, #513162 100%);
-  background-image: linear-gradient(135deg, #fab2ff 10%, #1904e5 100%);
-  background-image: linear-gradient(135deg, #ffa8a8 10%, #fcff00 100%);
-  background-image: linear-gradient(135deg, #ff96f9 10%, #c32bac 100%);
   background-image: linear-gradient(135deg, #ffd3a5 10%, #fd6585 100%);
   transform: translateX(100%);
+  background-size: 150% 150%;
+  -webkit-animation: move 3s ease-in-out infinite;
 }
 header {
   position: fixed;
@@ -180,7 +184,7 @@ nav {
 .fill-right:hover {
   padding: 10px 20px;
   font-weight: bold;
-  background-color: #74ebd5;
+
   background-image: linear-gradient(
     315deg,
     #74ebd5 0%,
@@ -191,4 +195,47 @@ nav {
   transition-duration: 500ms;
 
   cursor: pointer;
+}
+@-webkit-keyframes move {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+  body{
+    font-size: 1rem;
+  }
+  .fill-right:hover {
+    padding: 8px 15px;
+    background-color: none;
+    background-image: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.2em;
+
+  }
+  #shop {
+    padding: 8px 16px ;
+    width: 95%;
+  }
+  .logo {
+    font-size: 0.9rem;
+  }
+  .nav-links,
+  #team,
+  #contact {
+  width: 200%;
+
+  margin-left: 0%;
+}
+.fill-right:hover {
+
+}
 }

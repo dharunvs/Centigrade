@@ -1,3 +1,4 @@
+
 .team-members {
   position: absolute;
   top: 50%;
@@ -69,4 +70,39 @@
 
 img {
   width: 100%;
+}
+@media only screen and (max-width: 480px) {
+  .team-members {
+    width: 50%;
+    left:20%;
+    transform: translate(-50%, -50%);
+    grid-template-columns: 1fr ;
+
+}
+.member {
+width: 180px;
+height: 180px;
+border-radius: 50%;
+left:120px;
+top: 40px;
+}
+img {
+  width: 80%;
+}
+.member1:hover .card1,
+.member2:hover .card2,
+.member3:hover .card3 {
+  transform: translateY(0%,0%);
+}
+.member1:hover,
+.member2:hover,
+.member3:hover {
+  width: 230px;
+  height: 230px;
+}
+.member .card {
+  transform: translateY(-110%);
+
+}
+
 }
