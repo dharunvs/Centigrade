@@ -527,9 +527,9 @@
 }
 
 .added {
-  background-color: rgb(255, 0, 242);
+  background-color: rgb(134, 32, 129);
   color: #000000;
-  border-radius: 5px;
+  border-radius: 25px;
   padding: 10px 20px;
   position: fixed;
   left: 50%;

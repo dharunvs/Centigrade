@@ -114,5 +114,5 @@ addedAnimation = () => {
   submit.classList.add("show")
   setTimeout(() => {
       submit.classList.remove("show");
-    }, 5000);
+    }, 2500);
 }
