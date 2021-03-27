@@ -116,3 +116,18 @@ addedAnimation = () => {
       submit.classList.remove("show");
     }, 2500);
 }
+
+info = () => {
+  const order_info = document.querySelector("#order");
+  order_info.classList.add("see");
+  const sub = document.getElementById("submit");
+  sub.onclick = function() {
+    const submit = document.querySelector(".submitted");
+  submit.classList.add("show")
+  setTimeout(() => {
+      submit.classList.remove("show");
+    }, 3000);
+    order_info.classList.remove("see"); 
+    
+  }
+}

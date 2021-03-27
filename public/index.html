@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <title>SHOPiT👾</title>
-
+<!--centigrade-->
 </head>
 
 <body>
@@ -226,7 +226,14 @@
                                 <hr id="hr2">
                             </div>
                         </div>
-                        <button class="place-order">Place Order</button>
+                        <button class="place-order" onclick="info()">Place Order</button>
+                        <form id="order">
+                            <input name="name" placeholder="Enter your name">
+                            <input name="email" placeholder="Enter your email address">
+                            <button type="button" id="submit">Submit </button>
+                            <div class="submitted">Query Submitted successfully</div>
+
+                        </form>
                     </div>
                 </div>
 

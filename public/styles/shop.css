@@ -428,6 +428,56 @@
   justify-content: space-between;
 }
 
+#order {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  visibility: hidden;
+}
+
+#order input {
+  border: 2px solid aqua;
+  border-radius: 2px;
+  padding: 10px auto;
+}
+
+#order::before input {
+  content: "";
+}
+
+#order.see {
+  visibility: visible;
+}
+
+.submitted {
+  background-color: aqua;
+  color: #000000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  z-index: 1;
+  transform: translate(-50%);
+  visibility: hidden;
+}
+
+.submitted.show {
+  visibility: visible;
+  animation: anim 3s;
+}
+
+@keyframes anim {
+  from {
+    bottom: 60px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
 #price-display {
   height: 50%;
   width: 100%;
@@ -449,11 +499,9 @@
   transition: all 200ms ease-in-out;
 }
 
-.place-order:hover{
+.place-order:hover {
   background-color: rgb(109, 187, 255);
 }
-
-
 
 .item {
   height: 20vh;
